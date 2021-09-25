@@ -1,0 +1,370 @@
+11
+8 9 4 5 0 0 3 0 0 10 0 0 7 2 0 0 6 11 0 0 1 0 0
+3 5
+2 7
+3 6
+4 3
+2 5
+9 2
+6 2
+5 3
+4 4
+5 7
+1 11
+escribir 1
+escribir 2
+escribir 3
+escribir 4
+escribir 5
+escribir 6
+escribir 7
+escribir 8
+escribir 9
+escribir 10
+escribir 11
+poner_prod AAAA
+poner_prod BBBB
+poner_prod CCCC
+poner_prod DDDD
+poner_prod EEEE
+poner_prod FFFF
+poner_prod GGGG
+poner_prod HHHH
+poner_prod IIII
+poner_prod JJJJ
+poner_prod KKKK
+distribuir BBBB 40
+distribuir KKKK 35
+distribuir DDDD 27
+distribuir HHHH 33
+distribuir AAAA 43
+distribuir GGGG 64
+distribuir CCCC 24
+escribir 1
+escribir 2
+escribir 3
+escribir 4
+escribir 5
+escribir 6
+escribir 7
+escribir 8
+escribir 9
+escribir 10
+escribir 11
+reorganizar 1
+compactar 2
+reorganizar 3
+compactar 4
+reorganizar 5
+compactar 6
+reorganizar 7
+compactar 8
+reorganizar 9
+compactar 10
+reorganizar 11
+compactar 1
+reorganizar 2
+compactar 3
+reorganizar 4
+compactar 5
+reorganizar 6
+compactar 7
+reorganizar 8
+compactar 9
+reorganizar 10
+compactar 11
+escribir 1
+escribir 2
+escribir 3
+escribir 4
+escribir 5
+escribir 6
+escribir 7
+escribir 8
+escribir 9
+escribir 10
+escribir 11
+inventario
+
+quitar_items 1 GGGG 7
+quitar_items 2 KKKK 5
+quitar_items 3 DDDD 2
+quitar_items 3 GGGG 7
+quitar_items 4 KKKK 5
+quitar_items 5 DDDD 4
+quitar_items 5 HHHH 3
+quitar_items 6 HHHH 5
+quitar_items 6 KKKK 4
+quitar_items 7 BBBB 10
+quitar_items 8 BBBB 12
+quitar_items 9 BBBB 12
+quitar_items 10 DDDD 10
+quitar_items 10 GGGG 4
+quitar_items 10 HHHH 4
+quitar_items 11 GGGG 6
+
+distribuir CCCC 4
+distribuir EEEE 4
+distribuir JJJJ 6
+distribuir IIII 14
+distribuir FFFF 20
+
+distribuir GGGG 17
+distribuir CCCC 21
+distribuir EEEE 7
+distribuir BBBB 13
+distribuir JJJJ 23
+distribuir EEEE 29
+
+quitar_items 1 AAAA 2
+quitar_items 1 CCCC 1
+quitar_items 1 JJJJ 1
+quitar_items 1 EEEE 1
+quitar_items 1 HHHH 1
+quitar_items 2 DDDD 3
+quitar_items 2 FFFF 2
+quitar_items 2 KKKK 3
+quitar_items 3 AAAA 3
+quitar_items 3 CCCC 2
+quitar_items 3 BBBB 1
+quitar_items 3 HHHH 2
+quitar_items 4 DDDD 2
+quitar_items 4 FFFF 1
+quitar_items 4 GGGG 1
+quitar_items 4 KKKK 2
+quitar_items 5 AAAA 1
+quitar_items 5 GGGG 1
+quitar_items 5 CCCC 2
+quitar_items 5 HHHH 1
+quitar_items 6 DDDD 3
+quitar_items 6 FFFF 1
+quitar_items 6 GGGG 3
+quitar_items 6 KKKK 1
+quitar_items 7 IIII 3
+quitar_items 7 FFFF 1
+quitar_items 7 BBBB 1
+quitar_items 8 CCCC 2
+quitar_items 8 EEEE 3
+quitar_items 8 JJJJ 2
+quitar_items 8 BBBB 1
+quitar_items 9 IIII 4
+quitar_items 9 FFFF 2
+quitar_items 9 KKKK 2
+quitar_items 10 AAAA 5
+quitar_items 10 FFFF 2
+quitar_items 10 GGGG 2
+quitar_items 10 CCCC 3
+quitar_items 10 HHHH 2
+quitar_items 10 KKKK 5
+quitar_items 11 AAAA 2
+quitar_items 11 CCCC 2
+quitar_items 11 HHHH 1
+
+reorganizar 1
+compactar 2
+reorganizar 3
+compactar 4
+reorganizar 5
+compactar 6
+reorganizar 7
+compactar 8
+reorganizar 9
+compactar 10
+reorganizar 11
+
+
+
+
+quitar_items 1 AAAA 25
+quitar_items 1 BBBB 26
+quitar_items 1 CCCC 27
+quitar_items 1 DDDD 28
+quitar_items 1 EEEE 29
+quitar_items 1 FFFF 30
+quitar_items 1 GGGG 31
+quitar_items 1 HHHH 32
+quitar_items 1 IIII 33
+quitar_items 1 JJJJ 34
+quitar_items 1 KKKK 35
+quitar_items 1 LLLL 36
+quitar_items 1 NNNN 37
+quitar_items 1 RRRR 38
+quitar_items 2 AAAA 25
+quitar_items 2 BBBB 26
+quitar_items 2 CCCC 27
+quitar_items 2 DDDD 28
+quitar_items 2 EEEE 29
+quitar_items 2 FFFF 30
+quitar_items 2 GGGG 31
+quitar_items 2 HHHH 32
+quitar_items 2 IIII 33
+quitar_items 2 JJJJ 34
+quitar_items 2 KKKK 35
+quitar_items 2 LLLL 36
+quitar_items 2 NNNN 37
+quitar_items 2 RRRR 38
+quitar_items 3 AAAA 25
+quitar_items 3 BBBB 26
+quitar_items 3 CCCC 27
+quitar_items 3 DDDD 28
+quitar_items 3 EEEE 29
+quitar_items 3 FFFF 30
+quitar_items 3 GGGG 31
+quitar_items 3 HHHH 32
+quitar_items 3 IIII 33
+quitar_items 3 JJJJ 34
+quitar_items 3 KKKK 35
+quitar_items 3 LLLL 36
+quitar_items 3 NNNN 37
+quitar_items 3 RRRR 38
+quitar_items 4 AAAA 25
+quitar_items 4 BBBB 26
+quitar_items 4 CCCC 27
+quitar_items 4 DDDD 28
+quitar_items 4 EEEE 29
+quitar_items 4 FFFF 30
+quitar_items 4 GGGG 31
+quitar_items 4 HHHH 32
+quitar_items 4 IIII 33
+quitar_items 4 JJJJ 34
+quitar_items 4 KKKK 35
+quitar_items 4 LLLL 36
+quitar_items 4 NNNN 37
+quitar_items 4 RRRR 38
+quitar_items 5 AAAA 25
+quitar_items 5 BBBB 26
+quitar_items 5 CCCC 27
+quitar_items 5 DDDD 28
+quitar_items 5 EEEE 29
+quitar_items 5 FFFF 30
+quitar_items 5 GGGG 31
+quitar_items 5 HHHH 32
+quitar_items 5 IIII 33
+quitar_items 5 JJJJ 34
+quitar_items 5 KKKK 35
+quitar_items 5 LLLL 36
+quitar_items 5 NNNN 37
+quitar_items 5 RRRR 38
+quitar_items 6 AAAA 25
+quitar_items 6 BBBB 26
+quitar_items 6 CCCC 27
+quitar_items 6 DDDD 28
+quitar_items 6 EEEE 29
+quitar_items 6 FFFF 30
+quitar_items 6 GGGG 31
+quitar_items 6 HHHH 32
+quitar_items 6 IIII 33
+quitar_items 6 JJJJ 34
+quitar_items 6 KKKK 35
+quitar_items 6 LLLL 36
+quitar_items 6 NNNN 37
+quitar_items 6 RRRR 38
+quitar_items 7 AAAA 25
+quitar_items 7 BBBB 26
+quitar_items 7 CCCC 27
+quitar_items 7 DDDD 28
+quitar_items 7 EEEE 29
+quitar_items 7 FFFF 30
+quitar_items 7 GGGG 31
+quitar_items 7 HHHH 32
+quitar_items 7 IIII 33
+quitar_items 7 JJJJ 34
+quitar_items 7 KKKK 35
+quitar_items 7 LLLL 36
+quitar_items 7 NNNN 37
+quitar_items 7 RRRR 38
+quitar_items 8 AAAA 25
+quitar_items 8 BBBB 26
+quitar_items 8 CCCC 27
+quitar_items 8 DDDD 28
+quitar_items 8 EEEE 29
+quitar_items 8 FFFF 30
+quitar_items 8 GGGG 31
+quitar_items 8 HHHH 32
+quitar_items 8 IIII 33
+quitar_items 8 JJJJ 34
+quitar_items 8 KKKK 35
+quitar_items 8 LLLL 36
+quitar_items 8 NNNN 37
+quitar_items 8 RRRR 38
+quitar_items 9 AAAA 25
+quitar_items 9 BBBB 26
+quitar_items 9 CCCC 27
+quitar_items 9 DDDD 28
+quitar_items 9 EEEE 29
+quitar_items 9 FFFF 30
+quitar_items 9 GGGG 31
+quitar_items 9 HHHH 32
+quitar_items 9 IIII 33
+quitar_items 9 JJJJ 34
+quitar_items 9 KKKK 35
+quitar_items 9 LLLL 36
+quitar_items 9 NNNN 37
+quitar_items 9 RRRR 38
+quitar_items 10 AAAA 25
+quitar_items 10 BBBB 26
+quitar_items 10 CCCC 27
+quitar_items 10 DDDD 28
+quitar_items 10 EEEE 29
+quitar_items 10 FFFF 30
+quitar_items 10 GGGG 31
+quitar_items 10 HHHH 32
+quitar_items 10 IIII 33
+quitar_items 10 JJJJ 34
+quitar_items 10 KKKK 35
+quitar_items 10 LLLL 36
+quitar_items 10 NNNN 37
+quitar_items 10 RRRR 38
+quitar_items 11 AAAA 25
+quitar_items 11 BBBB 26
+quitar_items 11 CCCC 27
+quitar_items 11 DDDD 28
+quitar_items 11 EEEE 29
+quitar_items 11 FFFF 30
+quitar_items 11 GGGG 31
+quitar_items 11 HHHH 32
+quitar_items 11 IIII 33
+quitar_items 11 JJJJ 34
+quitar_items 11 KKKK 35
+quitar_items 11 LLLL 36
+quitar_items 11 NNNN 37
+quitar_items 11 RRRR 38
+inventario
+quitar_prod EEEE
+quitar_prod GGGG
+quitar_prod LLLL
+quitar_prod DDDD
+quitar_prod AAAA
+quitar_prod KKKK
+quitar_prod BBBB
+quitar_prod HHHH
+quitar_prod RRRR
+quitar_prod NNNN
+quitar_prod FFFF
+quitar_prod CCCC
+quitar_prod JJJJ
+quitar_prod IIII
+inventario
+compactar 1
+compactar 2
+compactar 3
+compactar 4
+compactar 5
+compactar 6
+reorganizar 7
+reorganizar 8
+reorganizar 9
+reorganizar 10
+reorganizar 11
+escribir 1
+escribir 2
+escribir 3
+escribir 4
+escribir 5
+escribir 6
+escribir 7
+escribir 8
+escribir 9
+escribir 10
+escribir 11
+fin

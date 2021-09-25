@@ -1,0 +1,1541 @@
+escribir 1
+  NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL
+  0
+escribir 2
+  NULL NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL NULL
+  0
+escribir 3
+  NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL
+  0
+escribir 4
+  NULL NULL NULL
+  NULL NULL NULL
+  NULL NULL NULL
+  NULL NULL NULL
+  0
+escribir 5
+  NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL
+  0
+escribir 6
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  0
+escribir 7
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  0
+escribir 8
+  NULL NULL NULL
+  NULL NULL NULL
+  NULL NULL NULL
+  NULL NULL NULL
+  NULL NULL NULL
+  0
+escribir 9
+  NULL NULL NULL NULL
+  NULL NULL NULL NULL
+  NULL NULL NULL NULL
+  NULL NULL NULL NULL
+  0
+escribir 10
+  NULL NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL NULL
+  0
+escribir 11
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  0
+poner_prod AAAA
+poner_prod BBBB
+poner_prod CCCC
+poner_prod DDDD
+poner_prod EEEE
+poner_prod FFFF
+poner_prod GGGG
+poner_prod HHHH
+poner_prod IIII
+poner_prod JJJJ
+poner_prod KKKK
+distribuir BBBB 40
+  0
+distribuir KKKK 35
+  8
+distribuir DDDD 27
+  13
+distribuir HHHH 33
+  17
+distribuir AAAA 43
+  24
+distribuir GGGG 67
+  47
+distribuir CCCC 85
+  79
+quitar_items 1 AAAA 2
+  0
+quitar_items 1 GGGG 3
+  0
+quitar_items 1 HHHH 2
+  0
+quitar_items 2 KKKK 3
+  0
+quitar_items 2 DDDD 2
+  0
+quitar_items 3 BBBB 1
+  0
+quitar_items 3 KKKK 5
+  0
+quitar_items 3 DDDD 4
+  0
+quitar_items 4 KKKK 7
+  0
+quitar_items 5 BBBB 4
+  0
+quitar_items 6 HHHH 1
+  0
+quitar_items 6 GGGG 6
+  0
+quitar_items 7 BBBB 11
+  0
+quitar_items 8 GGGG 3
+  0
+quitar_items 8 AAAA 2
+  0
+quitar_items 8 HHHH 1
+  0
+quitar_items 9 BBBB 7
+  0
+poner_items 10 KKKK 4
+  0
+poner_items 10 DDDD 7
+  0
+quitar_items 10 CCCC 3
+  0
+quitar_items 11 HHHH 1
+  0
+quitar_items 11 AAAA 2
+  0
+escribir 1
+  NULL NULL NULL GGGG GGGG
+  NULL AAAA AAAA AAAA AAAA
+  NULL NULL HHHH HHHH NULL
+  8
+  AAAA 4
+  GGGG 2
+  HHHH 2
+escribir 2
+  NULL NULL DDDD DDDD DDDD DDDD HHHH
+  NULL NULL NULL KKKK KKKK KKKK KKKK
+  9
+  DDDD 4
+  HHHH 1
+  KKKK 4
+escribir 3
+  NULL NULL NULL DDDD DDDD DDDD
+  NULL KKKK KKKK KKKK KKKK NULL
+  NULL BBBB NULL NULL NULL NULL
+  8
+  BBBB 1
+  DDDD 3
+  KKKK 4
+escribir 4
+  KKKK KKKK DDDD
+  NULL NULL NULL
+  NULL NULL NULL
+  BBBB BBBB NULL
+  5
+  BBBB 2
+  DDDD 1
+  KKKK 2
+escribir 5
+  BBBB BBBB BBBB BBBB BBBB
+  NULL NULL NULL NULL BBBB
+  6
+  BBBB 6
+escribir 6
+  GGGG CCCC
+  NULL GGGG
+  NULL NULL
+  NULL NULL
+  AAAA NULL
+  AAAA AAAA
+  AAAA AAAA
+  HHHH HHHH
+  NULL HHHH
+  11
+  AAAA 5
+  CCCC 1
+  GGGG 2
+  HHHH 3
+escribir 7
+  NULL BBBB
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  1
+  BBBB 1
+escribir 8
+  GGGG GGGG GGGG
+  NULL NULL NULL
+  AAAA AAAA AAAA
+  HHHH NULL NULL
+  NULL HHHH HHHH
+  9
+  AAAA 3
+  GGGG 3
+  HHHH 3
+escribir 9
+  BBBB BBBB KKKK KKKK
+  BBBB BBBB BBBB BBBB
+  NULL NULL NULL BBBB
+  NULL NULL NULL NULL
+  9
+  BBBB 7
+  KKKK 2
+escribir 10
+  NULL NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL NULL
+  DDDD DDDD DDDD NULL NULL NULL NULL
+  KKKK KKKK KKKK DDDD DDDD DDDD DDDD
+  GGGG NULL NULL NULL CCCC CCCC KKKK
+  14
+  CCCC 2
+  DDDD 7
+  GGGG 1
+  KKKK 4
+escribir 11
+  NULL AAAA
+  HHHH NULL
+  NULL HHHH
+  3
+  AAAA 1
+  HHHH 2
+inventario
+  AAAA 13
+  BBBB 17
+  CCCC 3
+  DDDD 15
+  EEEE 0
+  FFFF 0
+  GGGG 8
+  HHHH 11
+  IIII 0
+  JJJJ 0
+  KKKK 16
+distribuir OOOO 90
+  error
+distribuir FFFF 31
+  2
+distribuir JJJJ 41
+  17
+distribuir EEEE 38
+  25
+distribuir IIII 47
+  43
+quitar_items 11 JJJJ 1
+  0
+quitar_items 11 AAAA 5
+  4
+quitar_items 10 DDDD 3
+  0
+quitar_items 10 KKKK 1
+  0
+quitar_items 10 IIII 2
+  0
+quitar_items 9 FFFF 4
+  0
+quitar_items 9 BBBB 5
+  0
+quitar_items 9 KKKK 1
+  0
+quitar_items 8 GGGG 2
+  0
+quitar_items 8 AAAA 1
+  0
+quitar_items 8 HHHH 2
+  0
+quitar_items 8 EEEE 7
+  3
+quitar_items 7 FFFF 6
+  0
+poner_items 7 KKKK 1
+  0
+quitar_items 6 AAAA 3
+  0
+quitar_items 6 EEEE 3
+  0
+quitar_items 6 HHHH 1
+  0
+quitar_items 5 BBBB 4
+  0
+quitar_items 5 FFFF 2
+  0
+quitar_items 4 BBBB 1
+  0
+quitar_items 4 JJJJ 2
+  0
+quitar_items 4 DDDD 9
+  8
+quitar_items 3 JJJJ 4
+  0
+quitar_items 3 KKKK 2
+  0
+quitar_items 3 FFFF 2
+  0
+quitar_items 3 DDDD 1
+  0
+quitar_items 2 KKKK 3
+  0
+quitar_items 2 DDDD 1
+  0
+quitar_items 2 DDDD 1
+  0
+quitar_items 2 JJJJ 1
+  0
+quitar_items 1 GGGG 1
+  0
+quitar_items 1 EEEE 3
+  0
+quitar_items 1 AAAA 3
+  0
+quitar_items 1 HHHH 6
+  4
+reorganizar 1
+compactar 2
+reorganizar 3
+compactar 4
+reorganizar 5
+compactar 6
+reorganizar 7
+compactar 8
+reorganizar 9
+compactar 10
+reorganizar 11
+escribir 1
+  NULL NULL NULL NULL NULL
+  JJJJ NULL NULL NULL NULL
+  AAAA EEEE EEEE GGGG JJJJ
+  6
+  AAAA 1
+  EEEE 2
+  GGGG 1
+  JJJJ 2
+escribir 2
+  HHHH NULL NULL NULL NULL NULL NULL
+  FFFF JJJJ KKKK JJJJ JJJJ DDDD DDDD
+  8
+  DDDD 2
+  FFFF 1
+  HHHH 1
+  JJJJ 3
+  KKKK 1
+escribir 3
+  NULL NULL NULL NULL NULL NULL
+  JJJJ KKKK KKKK NULL NULL NULL
+  BBBB DDDD DDDD FFFF JJJJ JJJJ
+  9
+  BBBB 1
+  DDDD 2
+  FFFF 1
+  JJJJ 3
+  KKKK 2
+escribir 4
+  NULL NULL NULL
+  KKKK KKKK NULL
+  FFFF JJJJ JJJJ
+  BBBB FFFF FFFF
+  8
+  BBBB 1
+  FFFF 3
+  JJJJ 2
+  KKKK 2
+escribir 5
+  NULL NULL NULL NULL NULL
+  BBBB BBBB FFFF FFFF NULL
+  4
+  BBBB 2
+  FFFF 2
+escribir 6
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  CCCC NULL
+  GGGG GGGG
+  JJJJ EEEE
+  AAAA JJJJ
+  HHHH AAAA
+  JJJJ HHHH
+  11
+  AAAA 2
+  CCCC 1
+  EEEE 1
+  GGGG 2
+  HHHH 2
+  JJJJ 3
+escribir 7
+  NULL NULL
+  NULL NULL
+  KKKK NULL
+  FFFF FFFF
+  FFFF FFFF
+  BBBB FFFF
+  7
+  BBBB 1
+  FFFF 5
+  KKKK 1
+escribir 8
+  NULL NULL NULL
+  NULL NULL NULL
+  NULL NULL NULL
+  AAAA IIII GGGG
+  JJJJ HHHH AAAA
+  6
+  AAAA 2
+  GGGG 1
+  HHHH 1
+  IIII 1
+  JJJJ 1
+escribir 9
+  NULL NULL NULL NULL
+  NULL NULL NULL NULL
+  FFFF KKKK NULL NULL
+  BBBB BBBB FFFF FFFF
+  6
+  BBBB 2
+  FFFF 3
+  KKKK 1
+escribir 10
+  NULL NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL NULL
+  DDDD DDDD DDDD DDDD NULL NULL NULL
+  GGGG IIII CCCC CCCC KKKK KKKK KKKK
+  11
+  CCCC 2
+  DDDD 4
+  GGGG 1
+  IIII 1
+  KKKK 3
+escribir 11
+  NULL NULL
+  JJJJ JJJJ
+  HHHH HHHH
+  4
+  HHHH 2
+  JJJJ 2
+inventario
+  AAAA 5
+  BBBB 7
+  CCCC 3
+  DDDD 8
+  EEEE 3
+  FFFF 15
+  GGGG 5
+  HHHH 6
+  IIII 2
+  JJJJ 16
+  KKKK 10
+distribuir PPPP 62
+  error
+distribuir IIII 28
+  1
+distribuir DDDD 37
+  18
+distribuir SSSS 78
+  error
+distribuir JJJJ 1
+  1
+distribuir KKKK 34
+  21
+distribuir EEEE 39
+  30
+distribuir GGGG 49
+  46
+distribuir CCCC 72
+  67
+quitar_items 1 EEEE 4
+  0
+quitar_items 1 JJJJ 1
+  0
+quitar_items 1 DDDD 1
+  0
+quitar_items 1 KKKK 2
+  0
+quitar_items 3 DDDD 5
+  0
+quitar_items 3 IIII 2
+  0
+quitar_items 3 JJJJ 1
+  0
+quitar_items 3 KKKK 5
+  3
+quitar_items 3 MMMM 1
+  error
+quitar_items 5 IIII 4
+  0
+quitar_items 5 BBBB 1
+  0
+quitar_items 5 BBBB 1
+  0
+quitar_items 5 BBBB 1
+  1
+quitar_items 7 FFFF 3
+  0
+quitar_items 7 IIII 4
+  0
+quitar_items 9 IIII 5
+  0
+quitar_items 9 FFFF 2
+  0
+quitar_items 9 BBBB 1
+  0
+quitar_items 11 HHHH 1
+  0
+quitar_items 11 JJJJ 6
+  4
+quitar_items 11 KKKK 4
+  3
+quitar_items 2 DDDD 6
+  0
+quitar_items 2 JJJJ 2
+  0
+quitar_items 4 IIII 8
+  5
+quitar_items 4 KKKK 6
+  4
+quitar_items 4 JJJJ 3
+  1
+quitar_items 4 FFFF 7
+  4
+quitar_items 6 KKKK 3
+  0
+quitar_items 6 HHHH 6
+  4
+quitar_items 6 JJJJ 1
+  0
+quitar_items 6 GGGG 5
+  3
+quitar_items 8 EEEE 7
+  3
+quitar_items 8 KKKK 1
+  0
+quitar_items 8 AAAA 1
+  0
+quitar_items 8 HHHH 5
+  4
+quitar_items 10 CCCC 5
+  0
+quitar_items 10 GGGG 7
+  3
+quitar_items 10 KKKK 2
+  0
+quitar_items 10 DDDD 3
+  0
+escribir 1
+  KKKK KKKK NULL NULL EEEE
+  JJJJ NULL DDDD NULL NULL
+  AAAA NULL NULL GGGG NULL
+  7
+  AAAA 1
+  DDDD 1
+  EEEE 1
+  GGGG 1
+  JJJJ 1
+  KKKK 2
+escribir 2
+  HHHH NULL NULL NULL NULL DDDD DDDD
+  FFFF NULL KKKK NULL JJJJ NULL NULL
+  6
+  DDDD 2
+  FFFF 1
+  HHHH 1
+  JJJJ 1
+  KKKK 1
+escribir 3
+  NULL NULL NULL DDDD DDDD DDDD
+  JJJJ NULL NULL NULL NULL IIII
+  BBBB NULL NULL FFFF NULL JJJJ
+  8
+  BBBB 1
+  DDDD 3
+  FFFF 1
+  IIII 1
+  JJJJ 2
+escribir 4
+  NULL NULL DDDD
+  NULL NULL NULL
+  NULL NULL NULL
+  BBBB NULL NULL
+  2
+  BBBB 1
+  DDDD 1
+escribir 5
+  NULL NULL NULL IIII IIII
+  NULL NULL FFFF FFFF NULL
+  4
+  FFFF 2
+  IIII 2
+escribir 6
+  KKKK EEEE
+  NULL NULL
+  DDDD NULL
+  CCCC DDDD
+  NULL NULL
+  JJJJ EEEE
+  AAAA JJJJ
+  NULL AAAA
+  NULL NULL
+  10
+  AAAA 2
+  CCCC 1
+  DDDD 2
+  EEEE 2
+  JJJJ 2
+  KKKK 1
+escribir 7
+  NULL IIII
+  NULL NULL
+  KKKK NULL
+  FFFF FFFF
+  NULL NULL
+  BBBB NULL
+  5
+  BBBB 1
+  FFFF 2
+  IIII 1
+  KKKK 1
+escribir 8
+  NULL NULL NULL
+  KKKK KKKK NULL
+  DDDD NULL KKKK
+  AAAA IIII GGGG
+  JJJJ NULL NULL
+  8
+  AAAA 1
+  DDDD 1
+  GGGG 1
+  IIII 1
+  JJJJ 1
+  KKKK 3
+escribir 9
+  IIII IIII IIII IIII
+  NULL NULL NULL IIII
+  FFFF KKKK NULL NULL
+  NULL BBBB NULL NULL
+  8
+  BBBB 1
+  FFFF 1
+  IIII 5
+  KKKK 1
+escribir 10
+  NULL NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL CCCC CCCC NULL
+  NULL NULL NULL DDDD EEEE NULL NULL
+  NULL IIII NULL NULL NULL NULL KKKK
+  6
+  CCCC 2
+  DDDD 1
+  EEEE 1
+  IIII 1
+  KKKK 1
+escribir 11
+  DDDD NULL
+  NULL NULL
+  NULL HHHH
+  2
+  DDDD 1
+  HHHH 1
+compactar 1
+reorganizar 2
+compactar 3
+reorganizar 4
+compactar 5
+reorganizar 6
+compactar 7
+reorganizar 8
+compactar 9
+reorganizar 10
+compactar 11
+escribir 11
+  NULL NULL
+  NULL NULL
+  HHHH DDDD
+  2
+  DDDD 1
+  HHHH 1
+escribir 10
+  NULL NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL NULL
+  CCCC CCCC DDDD EEEE IIII KKKK NULL
+  6
+  CCCC 2
+  DDDD 1
+  EEEE 1
+  IIII 1
+  KKKK 1
+escribir 9
+  NULL NULL NULL NULL
+  NULL NULL NULL NULL
+  IIII IIII IIII IIII
+  BBBB FFFF KKKK IIII
+  8
+  BBBB 1
+  FFFF 1
+  IIII 5
+  KKKK 1
+escribir 8
+  NULL NULL NULL
+  NULL NULL NULL
+  KKKK KKKK NULL
+  IIII JJJJ KKKK
+  AAAA DDDD GGGG
+  8
+  AAAA 1
+  DDDD 1
+  GGGG 1
+  IIII 1
+  JJJJ 1
+  KKKK 3
+escribir 7
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  IIII NULL
+  FFFF KKKK
+  BBBB FFFF
+  5
+  BBBB 1
+  FFFF 2
+  IIII 1
+  KKKK 1
+escribir 6
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  JJJJ KKKK
+  EEEE JJJJ
+  DDDD EEEE
+  CCCC DDDD
+  AAAA AAAA
+  10
+  AAAA 2
+  CCCC 1
+  DDDD 2
+  EEEE 2
+  JJJJ 2
+  KKKK 1
+escribir 5
+  NULL NULL NULL NULL NULL
+  FFFF FFFF IIII IIII NULL
+  4
+  FFFF 2
+  IIII 2
+escribir 4
+  NULL NULL NULL
+  NULL NULL NULL
+  NULL NULL NULL
+  BBBB DDDD NULL
+  2
+  BBBB 1
+  DDDD 1
+escribir 3
+  NULL NULL NULL NULL NULL NULL
+  DDDD DDDD NULL NULL NULL NULL
+  BBBB FFFF JJJJ JJJJ IIII DDDD
+  8
+  BBBB 1
+  DDDD 3
+  FFFF 1
+  IIII 1
+  JJJJ 2
+escribir 2
+  NULL NULL NULL NULL NULL NULL NULL
+  DDDD DDDD FFFF HHHH JJJJ KKKK NULL
+  6
+  DDDD 2
+  FFFF 1
+  HHHH 1
+  JJJJ 1
+  KKKK 1
+escribir 1
+  NULL NULL NULL NULL NULL
+  KKKK EEEE NULL NULL NULL
+  AAAA GGGG JJJJ DDDD KKKK
+  7
+  AAAA 1
+  DDDD 1
+  EEEE 1
+  GGGG 1
+  JJJJ 1
+  KKKK 2
+inventario
+  AAAA 4
+  BBBB 4
+  CCCC 3
+  DDDD 12
+  EEEE 4
+  FFFF 7
+  GGGG 2
+  HHHH 2
+  IIII 11
+  JJJJ 7
+  KKKK 10
+quitar_items 10 CCCC 1
+  0
+quitar_items 10 KKKK 6
+  5
+quitar_items 9 IIII 3
+  0
+quitar_items 9 FFFF 4
+  3
+quitar_items 8 DDDD 10
+  9
+quitar_items 8 KKKK 2
+  0
+quitar_items 7 FFFF 1
+  0
+quitar_items 7 BBBB 4
+  3
+quitar_items 6 AAAA 1
+  0
+quitar_items 6 DDDD 1
+  0
+quitar_items 6 EEEE 1
+  0
+quitar_items 6 JJJJ 1
+  0
+quitar_items 5 AAAA 4
+  4
+quitar_items 5 FFFF 6
+  4
+quitar_items 5 BBBB 5
+  5
+quitar_items 5 VVVV 2
+  error
+quitar_items 5 IIII 1
+  0
+quitar_items 5 IIII 1
+  0
+quitar_items 4 BBBB 5
+  4
+quitar_items 3 JJJJ 1
+  0
+quitar_items 3 DDDD 2
+  0
+quitar_items 2 DDDD 1
+  0
+quitar_items 2 HHHH 3
+  2
+quitar_items 1 GGGG 4
+  3
+quitar_items 1 JJJJ 5
+  4
+quitar_items 1 KKKK 4
+  2
+distribuir XXXX 40
+  error
+distribuir HHHH 20
+  0
+distribuir CCCC 34
+  5
+distribuir GGGG 29
+  11
+distribuir BBBB 47
+  26
+escribir 1
+  NULL NULL NULL NULL NULL
+  BBBB EEEE BBBB BBBB NULL
+  AAAA BBBB BBBB DDDD BBBB
+  9
+  AAAA 1
+  BBBB 6
+  DDDD 1
+  EEEE 1
+escribir 2
+  CCCC CCCC GGGG GGGG GGGG GGGG GGGG
+  CCCC DDDD FFFF CCCC JJJJ KKKK CCCC
+  14
+  CCCC 5
+  DDDD 1
+  FFFF 1
+  GGGG 5
+  JJJJ 1
+  KKKK 1
+escribir 3
+  GGGG GGGG GGGG GGGG GGGG GGGG
+  CCCC DDDD CCCC CCCC CCCC GGGG
+  BBBB FFFF CCCC JJJJ IIII CCCC
+  18
+  BBBB 1
+  CCCC 6
+  DDDD 1
+  FFFF 1
+  GGGG 7
+  IIII 1
+  JJJJ 1
+escribir 4
+  GGGG GGGG GGGG
+  CCCC CCCC GGGG
+  CCCC CCCC CCCC
+  CCCC DDDD CCCC
+  12
+  CCCC 7
+  DDDD 1
+  GGGG 4
+escribir 5
+  HHHH CCCC CCCC CCCC CCCC
+  HHHH HHHH HHHH HHHH HHHH
+  10
+  CCCC 4
+  HHHH 6
+escribir 6
+  NULL NULL
+  NULL NULL
+  BBBB NULL
+  BBBB BBBB
+  JJJJ KKKK
+  EEEE BBBB
+  DDDD BBBB
+  CCCC BBBB
+  GGGG AAAA
+  13
+  AAAA 1
+  BBBB 6
+  CCCC 1
+  DDDD 1
+  EEEE 1
+  GGGG 1
+  JJJJ 1
+  KKKK 1
+escribir 7
+  HHHH HHHH
+  HHHH HHHH
+  HHHH HHHH
+  IIII HHHH
+  FFFF KKKK
+  HHHH HHHH
+  12
+  FFFF 1
+  HHHH 9
+  IIII 1
+  KKKK 1
+escribir 8
+  NULL NULL NULL
+  BBBB BBBB NULL
+  BBBB KKKK BBBB
+  IIII JJJJ BBBB
+  AAAA BBBB GGGG
+  11
+  AAAA 1
+  BBBB 6
+  GGGG 1
+  IIII 1
+  JJJJ 1
+  KKKK 1
+escribir 9
+  CCCC CCCC CCCC CCCC
+  HHHH CCCC CCCC CCCC
+  HHHH HHHH IIII IIII
+  BBBB HHHH KKKK HHHH
+  16
+  BBBB 1
+  CCCC 7
+  HHHH 5
+  IIII 2
+  KKKK 1
+escribir 10
+  NULL NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL NULL
+  NULL CCCC DDDD EEEE IIII NULL NULL
+  4
+  CCCC 1
+  DDDD 1
+  EEEE 1
+  IIII 1
+escribir 11
+  BBBB BBBB
+  GGGG BBBB
+  HHHH DDDD
+  6
+  BBBB 3
+  DDDD 1
+  GGGG 1
+  HHHH 1
+compactar 1
+compactar 2
+compactar 3
+compactar 4
+compactar 5
+compactar 6
+reorganizar 7
+reorganizar 8
+reorganizar 9
+reorganizar 10
+reorganizar 11
+escribir 1
+  NULL NULL NULL NULL NULL
+  BBBB EEEE BBBB BBBB NULL
+  AAAA BBBB BBBB DDDD BBBB
+  9
+  AAAA 1
+  BBBB 6
+  DDDD 1
+  EEEE 1
+escribir 2
+  CCCC CCCC GGGG GGGG GGGG GGGG GGGG
+  CCCC DDDD FFFF CCCC JJJJ KKKK CCCC
+  14
+  CCCC 5
+  DDDD 1
+  FFFF 1
+  GGGG 5
+  JJJJ 1
+  KKKK 1
+escribir 3
+  GGGG GGGG GGGG GGGG GGGG GGGG
+  CCCC DDDD CCCC CCCC CCCC GGGG
+  BBBB FFFF CCCC JJJJ IIII CCCC
+  18
+  BBBB 1
+  CCCC 6
+  DDDD 1
+  FFFF 1
+  GGGG 7
+  IIII 1
+  JJJJ 1
+escribir 4
+  GGGG GGGG GGGG
+  CCCC CCCC GGGG
+  CCCC CCCC CCCC
+  CCCC DDDD CCCC
+  12
+  CCCC 7
+  DDDD 1
+  GGGG 4
+escribir 5
+  HHHH CCCC CCCC CCCC CCCC
+  HHHH HHHH HHHH HHHH HHHH
+  10
+  CCCC 4
+  HHHH 6
+escribir 6
+  NULL NULL
+  NULL NULL
+  BBBB NULL
+  BBBB BBBB
+  JJJJ KKKK
+  EEEE BBBB
+  DDDD BBBB
+  CCCC BBBB
+  GGGG AAAA
+  13
+  AAAA 1
+  BBBB 6
+  CCCC 1
+  DDDD 1
+  EEEE 1
+  GGGG 1
+  JJJJ 1
+  KKKK 1
+escribir 7
+  IIII KKKK
+  HHHH HHHH
+  HHHH HHHH
+  HHHH HHHH
+  HHHH HHHH
+  FFFF HHHH
+  12
+  FFFF 1
+  HHHH 9
+  IIII 1
+  KKKK 1
+escribir 8
+  NULL NULL NULL
+  JJJJ KKKK NULL
+  BBBB GGGG IIII
+  BBBB BBBB BBBB
+  AAAA BBBB BBBB
+  11
+  AAAA 1
+  BBBB 6
+  GGGG 1
+  IIII 1
+  JJJJ 1
+  KKKK 1
+escribir 9
+  HHHH IIII IIII KKKK
+  HHHH HHHH HHHH HHHH
+  CCCC CCCC CCCC CCCC
+  BBBB CCCC CCCC CCCC
+  16
+  BBBB 1
+  CCCC 7
+  HHHH 5
+  IIII 2
+  KKKK 1
+escribir 10
+  NULL NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL NULL
+  CCCC DDDD EEEE IIII NULL NULL NULL
+  4
+  CCCC 1
+  DDDD 1
+  EEEE 1
+  IIII 1
+escribir 11
+  GGGG HHHH
+  BBBB DDDD
+  BBBB BBBB
+  6
+  BBBB 3
+  DDDD 1
+  GGGG 1
+  HHHH 1
+quitar_items 1 AAAA 25
+  24
+quitar_items 1 BBBB 26
+  20
+quitar_items 1 CCCC 27
+  27
+quitar_items 1 DDDD 28
+  27
+quitar_items 1 EEEE 29
+  28
+quitar_items 1 FFFF 30
+  30
+quitar_items 1 GGGG 31
+  31
+quitar_items 1 HHHH 32
+  32
+quitar_items 1 IIII 33
+  33
+quitar_items 1 JJJJ 34
+  34
+quitar_items 1 KKKK 35
+  35
+quitar_items 1 LLLL 36
+  error
+quitar_items 1 NNNN 37
+  error
+quitar_items 1 RRRR 38
+  error
+quitar_items 2 AAAA 25
+  25
+quitar_items 2 BBBB 26
+  26
+quitar_items 2 CCCC 27
+  22
+quitar_items 2 DDDD 28
+  27
+quitar_items 2 EEEE 29
+  29
+quitar_items 2 FFFF 30
+  29
+quitar_items 2 GGGG 31
+  26
+quitar_items 2 HHHH 32
+  32
+quitar_items 2 IIII 33
+  33
+quitar_items 2 JJJJ 34
+  33
+quitar_items 2 KKKK 35
+  34
+quitar_items 2 LLLL 36
+  error
+quitar_items 2 NNNN 37
+  error
+quitar_items 2 RRRR 38
+  error
+quitar_items 3 AAAA 25
+  25
+quitar_items 3 BBBB 26
+  25
+quitar_items 3 CCCC 27
+  21
+quitar_items 3 DDDD 28
+  27
+quitar_items 3 EEEE 29
+  29
+quitar_items 3 FFFF 30
+  29
+quitar_items 3 GGGG 31
+  24
+quitar_items 3 HHHH 32
+  32
+quitar_items 3 IIII 33
+  32
+quitar_items 3 JJJJ 34
+  33
+quitar_items 3 KKKK 35
+  35
+quitar_items 3 LLLL 36
+  error
+quitar_items 3 NNNN 37
+  error
+quitar_items 3 RRRR 38
+  error
+quitar_items 4 AAAA 25
+  25
+quitar_items 4 BBBB 26
+  26
+quitar_items 4 CCCC 27
+  20
+quitar_items 4 DDDD 28
+  27
+quitar_items 4 EEEE 29
+  29
+quitar_items 4 FFFF 30
+  30
+quitar_items 4 GGGG 31
+  27
+quitar_items 4 HHHH 32
+  32
+quitar_items 4 IIII 33
+  33
+quitar_items 4 JJJJ 34
+  34
+quitar_items 4 KKKK 35
+  35
+quitar_items 4 LLLL 36
+  error
+quitar_items 4 NNNN 37
+  error
+quitar_items 4 RRRR 38
+  error
+quitar_items 5 AAAA 25
+  25
+quitar_items 5 BBBB 26
+  26
+quitar_items 5 CCCC 27
+  23
+quitar_items 5 DDDD 28
+  28
+quitar_items 5 EEEE 29
+  29
+quitar_items 5 FFFF 30
+  30
+quitar_items 5 GGGG 31
+  31
+quitar_items 5 HHHH 32
+  26
+quitar_items 5 IIII 33
+  33
+quitar_items 5 JJJJ 34
+  34
+quitar_items 5 KKKK 35
+  35
+quitar_items 5 LLLL 36
+  error
+quitar_items 5 NNNN 37
+  error
+quitar_items 5 RRRR 38
+  error
+quitar_items 6 AAAA 25
+  24
+quitar_items 6 BBBB 26
+  20
+quitar_items 6 CCCC 27
+  26
+quitar_items 6 DDDD 28
+  27
+quitar_items 6 EEEE 29
+  28
+quitar_items 6 FFFF 30
+  30
+quitar_items 6 GGGG 31
+  30
+quitar_items 6 HHHH 32
+  32
+quitar_items 6 IIII 33
+  33
+quitar_items 6 JJJJ 34
+  33
+quitar_items 6 KKKK 35
+  34
+quitar_items 6 LLLL 36
+  error
+quitar_items 6 NNNN 37
+  error
+quitar_items 6 RRRR 38
+  error
+quitar_items 7 AAAA 25
+  25
+quitar_items 7 BBBB 26
+  26
+quitar_items 7 CCCC 27
+  27
+quitar_items 7 DDDD 28
+  28
+quitar_items 7 EEEE 29
+  29
+quitar_items 7 FFFF 30
+  29
+quitar_items 7 GGGG 31
+  31
+quitar_items 7 HHHH 32
+  23
+quitar_items 7 IIII 33
+  32
+quitar_items 7 JJJJ 34
+  34
+quitar_items 7 KKKK 35
+  34
+quitar_items 7 LLLL 36
+  error
+quitar_items 7 NNNN 37
+  error
+quitar_items 7 RRRR 38
+  error
+quitar_items 8 AAAA 25
+  24
+quitar_items 8 BBBB 26
+  20
+quitar_items 8 CCCC 27
+  27
+quitar_items 8 DDDD 28
+  28
+quitar_items 8 EEEE 29
+  29
+quitar_items 8 FFFF 30
+  30
+quitar_items 8 GGGG 31
+  30
+quitar_items 8 HHHH 32
+  32
+quitar_items 8 IIII 33
+  32
+quitar_items 8 JJJJ 34
+  33
+quitar_items 8 KKKK 35
+  34
+quitar_items 8 LLLL 36
+  error
+quitar_items 8 NNNN 37
+  error
+quitar_items 8 RRRR 38
+  error
+quitar_items 9 AAAA 25
+  25
+quitar_items 9 BBBB 26
+  25
+quitar_items 9 CCCC 27
+  20
+quitar_items 9 DDDD 28
+  28
+quitar_items 9 EEEE 29
+  29
+quitar_items 9 FFFF 30
+  30
+quitar_items 9 GGGG 31
+  31
+quitar_items 9 HHHH 32
+  27
+quitar_items 9 IIII 33
+  31
+quitar_items 9 JJJJ 34
+  34
+quitar_items 9 KKKK 35
+  34
+quitar_items 9 LLLL 36
+  error
+quitar_items 9 NNNN 37
+  error
+quitar_items 9 RRRR 38
+  error
+quitar_items 10 AAAA 25
+  25
+quitar_items 10 BBBB 26
+  26
+quitar_items 10 CCCC 27
+  26
+quitar_items 10 DDDD 28
+  27
+quitar_items 10 EEEE 29
+  28
+quitar_items 10 FFFF 30
+  30
+quitar_items 10 GGGG 31
+  31
+quitar_items 10 HHHH 32
+  32
+quitar_items 10 IIII 33
+  32
+quitar_items 10 JJJJ 34
+  34
+quitar_items 10 KKKK 35
+  35
+quitar_items 10 LLLL 36
+  error
+quitar_items 10 NNNN 37
+  error
+quitar_items 10 RRRR 38
+  error
+quitar_items 11 AAAA 25
+  25
+quitar_items 11 BBBB 26
+  23
+quitar_items 11 CCCC 27
+  27
+quitar_items 11 DDDD 28
+  27
+quitar_items 11 EEEE 29
+  29
+quitar_items 11 FFFF 30
+  30
+quitar_items 11 GGGG 31
+  30
+quitar_items 11 HHHH 32
+  31
+quitar_items 11 IIII 33
+  33
+quitar_items 11 JJJJ 34
+  34
+quitar_items 11 KKKK 35
+  35
+quitar_items 11 LLLL 36
+  error
+quitar_items 11 NNNN 37
+  error
+quitar_items 11 RRRR 38
+  error
+inventario
+  AAAA 0
+  BBBB 0
+  CCCC 0
+  DDDD 0
+  EEEE 0
+  FFFF 0
+  GGGG 0
+  HHHH 0
+  IIII 0
+  JJJJ 0
+  KKKK 0
+quitar_prod EEEE
+quitar_prod GGGG
+quitar_prod LLLL
+  error
+quitar_prod DDDD
+quitar_prod AAAA
+quitar_prod KKKK
+quitar_prod BBBB
+quitar_prod HHHH
+quitar_prod RRRR
+  error
+quitar_prod NNNN
+  error
+quitar_prod FFFF
+quitar_prod CCCC
+quitar_prod JJJJ
+quitar_prod IIII
+inventario
+compactar 1
+compactar 2
+compactar 3
+compactar 4
+compactar 5
+compactar 6
+reorganizar 7
+reorganizar 8
+reorganizar 9
+reorganizar 10
+reorganizar 11
+escribir 1
+  NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL
+  0
+escribir 2
+  NULL NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL NULL
+  0
+escribir 3
+  NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL
+  0
+escribir 4
+  NULL NULL NULL
+  NULL NULL NULL
+  NULL NULL NULL
+  NULL NULL NULL
+  0
+escribir 5
+  NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL
+  0
+escribir 6
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  0
+escribir 7
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  0
+escribir 8
+  NULL NULL NULL
+  NULL NULL NULL
+  NULL NULL NULL
+  NULL NULL NULL
+  NULL NULL NULL
+  0
+escribir 9
+  NULL NULL NULL NULL
+  NULL NULL NULL NULL
+  NULL NULL NULL NULL
+  NULL NULL NULL NULL
+  0
+escribir 10
+  NULL NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL NULL
+  NULL NULL NULL NULL NULL NULL NULL
+  0
+escribir 11
+  NULL NULL
+  NULL NULL
+  NULL NULL
+  0
+fin

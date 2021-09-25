@@ -1,0 +1,309 @@
+\hypertarget{class_inventario}{}\section{Referencia de la Clase Inventario}
+\label{class_inventario}\index{Inventario@{Inventario}}
+
+
+Representa el inventario de los productos de un almacen.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_inventario_ab7ca21da6822bc59fa236f7238e20fd3}{Inventario} ()
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
+\hyperlink{class_inventario_a0b5c030c7cc22e57f92743fa26b781de}{$\sim$\+Inventario} ()
+\item 
+void \hyperlink{class_inventario_abe2124eed6c79aca488754a28142a3a6}{poner\+\_\+prod} (string producto)
+\begin{DoxyCompactList}\small\item\em Pone un producto en el inventario si no existia antes. \end{DoxyCompactList}\item 
+void \hyperlink{class_inventario_a7a9da8d5d032fc99b5a423209f871f8b}{quitar\+\_\+prod} (string producto)
+\begin{DoxyCompactList}\small\item\em Quita un producto del inventario si quedan 0 unidades de este en el almacen. \end{DoxyCompactList}\item 
+bool \hyperlink{class_inventario_a40f900ef1c0cdde02586ad56e06db58f}{exist\+\_\+prod} (map$<$ string, int $>$\+::iterator \&it, string producto)
+\begin{DoxyCompactList}\small\item\em Indica si el producto esta en el inventario. \end{DoxyCompactList}\item 
+void \hyperlink{class_inventario_ad11573bc6099edb9cf7bf63501b1a85f}{actualizar\+\_\+inven} (map$<$ string, int $>$\+::iterator \&it, int cantidad, bool poner)
+\begin{DoxyCompactList}\small\item\em Actualiza la cantidad de productos que hay en el inventario. \end{DoxyCompactList}\item 
+void \hyperlink{class_inventario_aa8c8b617c44b44819e9dcae3894eeecc}{consultar\+\_\+prod} (string producto) const 
+\begin{DoxyCompactList}\small\item\em Indica las unidades que hay de un producto en el almacen. \end{DoxyCompactList}\item 
+void \hyperlink{class_inventario_aa764715a4df95aed453d73a8d509e344}{consultar\+\_\+inven} () const 
+\begin{DoxyCompactList}\small\item\em Muestra los productos que hay en el inventario y su cantidad. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, int $>$ \hyperlink{class_inventario_a0359598d60117ae9b9cb5540c1a5b45f}{inven}
+\begin{DoxyCompactList}\small\item\em Diccionario con los objetos de un almacen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa el inventario de los productos de un almacen. 
+
+Contiene la cantidad de productos que hay en todo un almacen. 
+
+Definición en la línea 19 del archivo Inventario.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\index{Inventario@{Inventario}!Inventario@{Inventario}}
+\index{Inventario@{Inventario}!Inventario@{Inventario}}
+\subsubsection[{\texorpdfstring{Inventario()}{Inventario()}}]{\setlength{\rightskip}{0pt plus 5cm}Inventario\+::\+Inventario (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_inventario_ab7ca21da6822bc59fa236f7238e20fd3}{}\label{class_inventario_ab7ca21da6822bc59fa236f7238e20fd3}
+
+
+Creadora por defecto. 
+
+Se ejecuta automáticamente al declarar un inventario. \begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un inventario vacio. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Constante 
+\end{DoxyParagraph}
+
+
+Definición en la línea 7 del archivo Inventario.\+cc.
+
+
+\begin{DoxyCode}
+7 \{\}
+\end{DoxyCode}
+\index{Inventario@{Inventario}!````~Inventario@{$\sim$\+Inventario}}
+\index{````~Inventario@{$\sim$\+Inventario}!Inventario@{Inventario}}
+\subsubsection[{\texorpdfstring{$\sim$\+Inventario()}{~Inventario()}}]{\setlength{\rightskip}{0pt plus 5cm}Inventario\+::$\sim$\+Inventario (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_inventario_a0b5c030c7cc22e57f92743fa26b781de}{}\label{class_inventario_a0b5c030c7cc22e57f92743fa26b781de}
+
+
+Definición en la línea 9 del archivo Inventario.\+cc.
+
+
+\begin{DoxyCode}
+9 \{\}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\index{Inventario@{Inventario}!poner\+\_\+prod@{poner\+\_\+prod}}
+\index{poner\+\_\+prod@{poner\+\_\+prod}!Inventario@{Inventario}}
+\subsubsection[{\texorpdfstring{poner\+\_\+prod(string producto)}{poner_prod(string producto)}}]{\setlength{\rightskip}{0pt plus 5cm}void Inventario\+::poner\+\_\+prod (
+\begin{DoxyParamCaption}
+\item[{string}]{producto}
+\end{DoxyParamCaption}
+)}\hypertarget{class_inventario_abe2124eed6c79aca488754a28142a3a6}{}\label{class_inventario_abe2124eed6c79aca488754a28142a3a6}
+
+
+Pone un producto en el inventario si no existia antes. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se pondra el producto en el inventario si este no existia antes. En caso contario, se producirá un error. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Logaritmico dependiendo de los elementos que ya hayan el inventario. 
+\end{DoxyParagraph}
+
+
+Definición en la línea 11 del archivo Inventario.\+cc.
+
+
+\begin{DoxyCode}
+11                                           \{
+12     \textcolor{keywordflow}{if} (\hyperlink{class_inventario_a0359598d60117ae9b9cb5540c1a5b45f}{inven}.find(producto)==\hyperlink{class_inventario_a0359598d60117ae9b9cb5540c1a5b45f}{inven}.end())\{
+13         \hyperlink{class_inventario_a0359598d60117ae9b9cb5540c1a5b45f}{inven}[producto]=0;
+14     \}
+15     \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"  error"} <<endl;
+16 \}
+\end{DoxyCode}
+\index{Inventario@{Inventario}!quitar\+\_\+prod@{quitar\+\_\+prod}}
+\index{quitar\+\_\+prod@{quitar\+\_\+prod}!Inventario@{Inventario}}
+\subsubsection[{\texorpdfstring{quitar\+\_\+prod(string producto)}{quitar_prod(string producto)}}]{\setlength{\rightskip}{0pt plus 5cm}void Inventario\+::quitar\+\_\+prod (
+\begin{DoxyParamCaption}
+\item[{string}]{producto}
+\end{DoxyParamCaption}
+)}\hypertarget{class_inventario_a7a9da8d5d032fc99b5a423209f871f8b}{}\label{class_inventario_a7a9da8d5d032fc99b5a423209f871f8b}
+
+
+Quita un producto del inventario si quedan 0 unidades de este en el almacen. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se quitara el producto del inventario o no dependiendo de si este se encontraba en él y ademas no quedaban unidades. En caso contrario se producirá un error. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Logaritmico dependiendo de los elementos que hayan en el inventario. 
+\end{DoxyParagraph}
+
+
+Definición en la línea 18 del archivo Inventario.\+cc.
+
+
+\begin{DoxyCode}
+18                                            \{
+19     map <string,int>::iterator it;
+20     it = \hyperlink{class_inventario_a0359598d60117ae9b9cb5540c1a5b45f}{inven}.find(producto);
+21     \textcolor{keywordflow}{if} (it!=\hyperlink{class_inventario_a0359598d60117ae9b9cb5540c1a5b45f}{inven}.end() and it->second == 0)\{
+22         \hyperlink{class_inventario_a0359598d60117ae9b9cb5540c1a5b45f}{inven}.erase(it);
+23     \}
+24     \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"  error"} << endl;
+25 \}
+\end{DoxyCode}
+\index{Inventario@{Inventario}!exist\+\_\+prod@{exist\+\_\+prod}}
+\index{exist\+\_\+prod@{exist\+\_\+prod}!Inventario@{Inventario}}
+\subsubsection[{\texorpdfstring{exist\+\_\+prod(map$<$ string, int $>$\+::iterator \&it, string producto)}{exist_prod(map< string, int >::iterator &it, string producto)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Inventario\+::exist\+\_\+prod (
+\begin{DoxyParamCaption}
+\item[{map$<$ string, int $>$\+::iterator \&}]{it, }
+\item[{string}]{producto}
+\end{DoxyParamCaption}
+)}\hypertarget{class_inventario_a40f900ef1c0cdde02586ad56e06db58f}{}\label{class_inventario_a40f900ef1c0cdde02586ad56e06db58f}
+
+
+Indica si el producto esta en el inventario. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devolvera true en caso de que el producto se encuentre en el inventario e \char`\"{}it\char`\"{} apuntara al producto, en caso contrario devuelve false e \char`\"{}it\char`\"{} apuntara a inven.\+end(). 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Logaritmico dependiendo de los elementos que hayan en el inventario. 
+\end{DoxyParagraph}
+
+
+Definición en la línea 27 del archivo Inventario.\+cc.
+
+
+\begin{DoxyCode}
+27                                                                         \{
+28     it = \hyperlink{class_inventario_a0359598d60117ae9b9cb5540c1a5b45f}{inven}.find(producto);
+29     \textcolor{keywordflow}{return} (it!=\hyperlink{class_inventario_a0359598d60117ae9b9cb5540c1a5b45f}{inven}.end());
+30 \}
+\end{DoxyCode}
+\index{Inventario@{Inventario}!actualizar\+\_\+inven@{actualizar\+\_\+inven}}
+\index{actualizar\+\_\+inven@{actualizar\+\_\+inven}!Inventario@{Inventario}}
+\subsubsection[{\texorpdfstring{actualizar\+\_\+inven(map$<$ string, int $>$\+::iterator \&it, int cantidad, bool poner)}{actualizar_inven(map< string, int >::iterator &it, int cantidad, bool poner)}}]{\setlength{\rightskip}{0pt plus 5cm}void Inventario\+::actualizar\+\_\+inven (
+\begin{DoxyParamCaption}
+\item[{map$<$ string, int $>$\+::iterator \&}]{it, }
+\item[{int}]{cantidad, }
+\item[{bool}]{poner}
+\end{DoxyParamCaption}
+)}\hypertarget{class_inventario_ad11573bc6099edb9cf7bf63501b1a85f}{}\label{class_inventario_ad11573bc6099edb9cf7bf63501b1a85f}
+
+
+Actualiza la cantidad de productos que hay en el inventario. 
+
+\begin{DoxyPrecond}{Precondición}
+\char`\"{}it\char`\"{} apunta a un elemento de inven. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se habra puesto o quitado una cantidad determinada del producto que \char`\"{}it\char`\"{} señala en inven. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Constante 
+\end{DoxyParagraph}
+
+
+Definición en la línea 32 del archivo Inventario.\+cc.
+
+
+\begin{DoxyCode}
+32                                                                                        \{
+33     \textcolor{keywordflow}{if} (poner) it->second+=cantidad;
+34     \textcolor{keywordflow}{else} it->second-=cantidad;
+35 \}
+\end{DoxyCode}
+\index{Inventario@{Inventario}!consultar\+\_\+prod@{consultar\+\_\+prod}}
+\index{consultar\+\_\+prod@{consultar\+\_\+prod}!Inventario@{Inventario}}
+\subsubsection[{\texorpdfstring{consultar\+\_\+prod(string producto) const }{consultar_prod(string producto) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Inventario\+::consultar\+\_\+prod (
+\begin{DoxyParamCaption}
+\item[{string}]{producto}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_inventario_aa8c8b617c44b44819e9dcae3894eeecc}{}\label{class_inventario_aa8c8b617c44b44819e9dcae3894eeecc}
+
+
+Indica las unidades que hay de un producto en el almacen. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Si el producto a consultar se encuentra en el inventario, muestra el producto y su cantidad por el canal estandar de salida. En caso contrario se producirá un error. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Logaritmico dependiendo de los elementos que hayan en el inventario. 
+\end{DoxyParagraph}
+
+
+Definición en la línea 38 del archivo Inventario.\+cc.
+
+
+\begin{DoxyCode}
+38                                                     \{
+39     map <string,int>::const\_iterator it;
+40     it = \hyperlink{class_inventario_a0359598d60117ae9b9cb5540c1a5b45f}{inven}.find(producto);
+41     \textcolor{keywordflow}{if} (it!=\hyperlink{class_inventario_a0359598d60117ae9b9cb5540c1a5b45f}{inven}.end())\{
+42         cout << \textcolor{stringliteral}{"  "} << it->second << endl;
+43     \}
+44     \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"  error"} << endl;
+45 \}
+\end{DoxyCode}
+\index{Inventario@{Inventario}!consultar\+\_\+inven@{consultar\+\_\+inven}}
+\index{consultar\+\_\+inven@{consultar\+\_\+inven}!Inventario@{Inventario}}
+\subsubsection[{\texorpdfstring{consultar\+\_\+inven() const }{consultar_inven() const }}]{\setlength{\rightskip}{0pt plus 5cm}void Inventario\+::consultar\+\_\+inven (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_inventario_aa764715a4df95aed453d73a8d509e344}{}\label{class_inventario_aa764715a4df95aed453d73a8d509e344}
+
+
+Muestra los productos que hay en el inventario y su cantidad. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Muestra por el canal de salida estandar los elementos que hay en el inventario además de su cantidad. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal dependiendo de los elementos que hayan en el inventario. 
+\end{DoxyParagraph}
+
+
+Definición en la línea 47 del archivo Inventario.\+cc.
+
+
+\begin{DoxyCode}
+47                                       \{
+48     \textcolor{keywordflow}{for}(map<string,int>::const\_iterator it = \hyperlink{class_inventario_a0359598d60117ae9b9cb5540c1a5b45f}{inven}.begin(); it != \hyperlink{class_inventario_a0359598d60117ae9b9cb5540c1a5b45f}{inven}.end(); ++it)\{
+49         cout << \textcolor{stringliteral}{"  "} << it->first << \textcolor{stringliteral}{" "} << it->second << endl;
+50     \}
+51 \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\index{Inventario@{Inventario}!inven@{inven}}
+\index{inven@{inven}!Inventario@{Inventario}}
+\subsubsection[{\texorpdfstring{inven}{inven}}]{\setlength{\rightskip}{0pt plus 5cm}map$<$string,int$>$ Inventario\+::inven\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_inventario_a0359598d60117ae9b9cb5540c1a5b45f}{}\label{class_inventario_a0359598d60117ae9b9cb5540c1a5b45f}
+
+
+Diccionario con los objetos de un almacen. 
+
+
+
+Definición en la línea 23 del archivo Inventario.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_inventario_8hh}{Inventario.\+hh}\item 
+\hyperlink{_inventario_8cc}{Inventario.\+cc}\end{DoxyCompactItemize}

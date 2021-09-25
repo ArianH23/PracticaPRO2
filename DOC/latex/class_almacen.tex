@@ -1,0 +1,572 @@
+\hypertarget{class_almacen}{}\section{Referencia de la Clase Almacen}
+\label{class_almacen}\index{Almacen@{Almacen}}
+
+
+Representa una almacen con varias salas estructuradas en forma de arbol.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_almacen_a68a6084d5775d391c52d4825072a0612}{Almacen} ()
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
+\hyperlink{class_almacen_ae5ed0e91d616199b8dbdc1f8780a7efb}{Almacen} (int n)
+\begin{DoxyCompactList}\small\item\em Creadora por numero de salas. \end{DoxyCompactList}\item 
+void \hyperlink{class_almacen_a5532f34bea73002793d637b2031698c8}{poner\+\_\+items} (int id, string producto, int cantidad, \hyperlink{class_inventario}{Inventario} \&i)
+\begin{DoxyCompactList}\small\item\em Coloca una cantidad de productos en la sala \char`\"{}id\char`\"{}. \end{DoxyCompactList}\item 
+void \hyperlink{class_almacen_ab28cb9537ce54d2c67d1c85f69c2e09c}{quitar\+\_\+items} (int id, string producto, int cantidad, \hyperlink{class_inventario}{Inventario} \&i)
+\begin{DoxyCompactList}\small\item\em Coloca una cantidad de productos en la sala \char`\"{}id\char`\"{}. \end{DoxyCompactList}\item 
+void \hyperlink{class_almacen_a9e266b71d6ab186830abb7b3a367ecc0}{distribuir} (string producto, int cantidad, \hyperlink{class_inventario}{Inventario} \&i)
+\begin{DoxyCompactList}\small\item\em Operacion de distribucion. \end{DoxyCompactList}\item 
+void \hyperlink{class_almacen_a9b0a893ac5ea4774bd362e297b2c3770}{compactar} (int id)
+\begin{DoxyCompactList}\small\item\em Compactadora de sala especifica. \end{DoxyCompactList}\item 
+void \hyperlink{class_almacen_a9e27219c735096dab9d5d3edc2ae2012}{reorganizar} (int id)
+\begin{DoxyCompactList}\small\item\em Reorganizadora de sala especifica. \end{DoxyCompactList}\item 
+void \hyperlink{class_almacen_a477373756d8671d1acef1c7d84a926a9}{redimensionar} (int id, int f, int c)
+\begin{DoxyCompactList}\small\item\em Redimensionadora de sala especifica. \end{DoxyCompactList}\item 
+void \hyperlink{class_almacen_af3a411fa6f4e0d5b327697bdcd08c41c}{consultar\+\_\+pos} (int id, int f, int c) const 
+\begin{DoxyCompactList}\small\item\em Consultora por posicion y sala. \end{DoxyCompactList}\item 
+void \hyperlink{class_almacen_a4ed23c4daa30f40be6fb8986ab04cbef}{inisalas} ()
+\begin{DoxyCompactList}\small\item\em Da tamaño a cada una de las salas del almacen. \end{DoxyCompactList}\item 
+void \hyperlink{class_almacen_aee1a1a170d9712b5988692cb93791a4c}{creabtree} ()
+\begin{DoxyCompactList}\small\item\em Inicializa la estructura del almacen. \end{DoxyCompactList}\item 
+void \hyperlink{class_almacen_a139a466ffe4ed01057a19607e1c4d437}{escribir} (int id) const 
+\begin{DoxyCompactList}\small\item\em Operacion de escritura de la sala con identificador \char`\"{}id\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos privados estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_almacen_ab17f45bbf11a4c178ee4acefd6d085eb}{btree} (Bin\+Tree$<$ int $>$ \&b)
+\begin{DoxyCompactList}\small\item\em Operacion de lectura de identificadores de salas. \end{DoxyCompactList}\item 
+static int \hyperlink{class_almacen_a0a613fcb43d66dea5965a3588c66110d}{distr} (const Bin\+Tree$<$ int $>$ \&b, vector$<$ \hyperlink{class_sala}{Sala} $>$ \&\hyperlink{class_almacen_a5c60aa6a014eb6a96a2f5c6fb9a83e52}{salas}, int cantidad, string producto)
+\begin{DoxyCompactList}\small\item\em Operacion de distribucion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+Bin\+Tree$<$ int $>$ \hyperlink{class_almacen_a32ee5ed02255216a7ec6ac90e5d2030b}{alm}
+\begin{DoxyCompactList}\small\item\em Estructura de las salas en el almacen. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_sala}{Sala} $>$ \hyperlink{class_almacen_a5c60aa6a014eb6a96a2f5c6fb9a83e52}{salas}
+\begin{DoxyCompactList}\small\item\em Vector que contiene cada una de las salas del almacen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa una almacen con varias salas estructuradas en forma de arbol. 
+
+Desde cada sala puedes acceder a otras 2, una por la derecha, u otra por la izquierda o a ninguna. 
+
+Definición en la línea 17 del archivo Almacen.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\index{Almacen@{Almacen}!Almacen@{Almacen}}
+\index{Almacen@{Almacen}!Almacen@{Almacen}}
+\subsubsection[{\texorpdfstring{Almacen()}{Almacen()}}]{\setlength{\rightskip}{0pt plus 5cm}Almacen\+::\+Almacen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_almacen_a68a6084d5775d391c52d4825072a0612}{}\label{class_almacen_a68a6084d5775d391c52d4825072a0612}
+
+
+Creadora por defecto. 
+
+Se ejecuta automáticamente al declarar un almacen. \begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es una almacen sin salas 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Constante 
+\end{DoxyParagraph}
+
+
+Definición en la línea 39 del archivo Almacen.\+cc.
+
+
+\begin{DoxyCode}
+39                 \{
+40     \hyperlink{class_almacen_a5c60aa6a014eb6a96a2f5c6fb9a83e52}{salas} = vector <Sala> (0);
+41 \}
+\end{DoxyCode}
+\index{Almacen@{Almacen}!Almacen@{Almacen}}
+\index{Almacen@{Almacen}!Almacen@{Almacen}}
+\subsubsection[{\texorpdfstring{Almacen(int n)}{Almacen(int n)}}]{\setlength{\rightskip}{0pt plus 5cm}Almacen\+::\+Almacen (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{class_almacen_ae5ed0e91d616199b8dbdc1f8780a7efb}{}\label{class_almacen_ae5ed0e91d616199b8dbdc1f8780a7efb}
+
+
+Creadora por numero de salas. 
+
+Permite crear un almacen con un numero de salas \begin{DoxyPrecond}{Precondición}
+El valor de n es un numero natual 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un almacen con n salas 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal respecto a n 
+\end{DoxyParagraph}
+
+
+Definición en la línea 43 del archivo Almacen.\+cc.
+
+
+\begin{DoxyCode}
+43                       \{
+44     \hyperlink{class_almacen_a5c60aa6a014eb6a96a2f5c6fb9a83e52}{salas} = vector<Sala>(n);
+45 \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\index{Almacen@{Almacen}!btree@{btree}}
+\index{btree@{btree}!Almacen@{Almacen}}
+\subsubsection[{\texorpdfstring{btree(\+Bin\+Tree$<$ int $>$ \&b)}{btree(BinTree< int > &b)}}]{\setlength{\rightskip}{0pt plus 5cm}void Almacen\+::btree (
+\begin{DoxyParamCaption}
+\item[{Bin\+Tree$<$ int $>$ \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\hypertarget{class_almacen_ab17f45bbf11a4c178ee4acefd6d085eb}{}\label{class_almacen_ab17f45bbf11a4c178ee4acefd6d085eb}
+
+
+Operacion de lectura de identificadores de salas. 
+
+\begin{DoxyPrecond}{Precondición}
+b esta vacio. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parametro implicito contiene identificadores de salas ordenado de forma jerarquizada. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal respecto al numero de salas del almacen. 
+\end{DoxyParagraph}
+
+
+Definición en la línea 6 del archivo Almacen.\+cc.
+
+
+\begin{DoxyCode}
+6                                    \{
+7     \textcolor{keywordtype}{int} x;
+8     cin>>x;
+9     \textcolor{keywordflow}{if} (x!=0)\{
+10         BinTree<int> l;
+11         \hyperlink{class_almacen_ab17f45bbf11a4c178ee4acefd6d085eb}{btree} (l);
+12         BinTree<int> r;
+13         \hyperlink{class_almacen_ab17f45bbf11a4c178ee4acefd6d085eb}{btree} (r);
+14         
+15         b = BinTree <int> (x,l,r);
+16     \}
+17 \}
+\end{DoxyCode}
+\index{Almacen@{Almacen}!distr@{distr}}
+\index{distr@{distr}!Almacen@{Almacen}}
+\subsubsection[{\texorpdfstring{distr(const Bin\+Tree$<$ int $>$ \&b, vector$<$ Sala $>$ \&salas, int cantidad, string producto)}{distr(const BinTree< int > &b, vector< Sala > &salas, int cantidad, string producto)}}]{\setlength{\rightskip}{0pt plus 5cm}int Almacen\+::distr (
+\begin{DoxyParamCaption}
+\item[{const Bin\+Tree$<$ int $>$ \&}]{b, }
+\item[{vector$<$ {\bf Sala} $>$ \&}]{salas, }
+\item[{int}]{cantidad, }
+\item[{string}]{producto}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\hypertarget{class_almacen_a0a613fcb43d66dea5965a3588c66110d}{}\label{class_almacen_a0a613fcb43d66dea5965a3588c66110d}
+
+
+Operacion de distribucion. 
+
+\begin{DoxyPrecond}{Precondición}
+El valor cantidad es un numero natural, b no esta vacio y tiene dos identificadores adyacentes o ninguno. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se habra distribuido el producto por todo el almacen y se devolvera el numero de unidades que no se hayan podido colocar. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal respecto a la suma del tamaño de todas las estanterias de las salas del almacen. 
+\end{DoxyParagraph}
+
+
+Definición en la línea 18 del archivo Almacen.\+cc.
+
+
+\begin{DoxyCode}
+18                                                                                              \{
+19     cantidad = \hyperlink{class_almacen_a5c60aa6a014eb6a96a2f5c6fb9a83e52}{salas}[b.value()-1].poner\_items(producto,cantidad);
+20     
+21     \textcolor{keywordflow}{if} (not b.left().empty())\{
+22         \textcolor{keywordtype}{int} left;
+23         \textcolor{keywordtype}{int} right;
+24         
+25         \textcolor{keywordflow}{if} (cantidad%2 == 0)\{
+26             left = \hyperlink{class_almacen_a0a613fcb43d66dea5965a3588c66110d}{distr} (b.left(),\hyperlink{class_almacen_a5c60aa6a014eb6a96a2f5c6fb9a83e52}{salas},cantidad/2,producto);
+27             right = \hyperlink{class_almacen_a0a613fcb43d66dea5965a3588c66110d}{distr} (b.right(),\hyperlink{class_almacen_a5c60aa6a014eb6a96a2f5c6fb9a83e52}{salas},cantidad/2,producto);
+28         \}
+29         \textcolor{keywordflow}{else}\{
+30             left = \hyperlink{class_almacen_a0a613fcb43d66dea5965a3588c66110d}{distr}(b.left(),\hyperlink{class_almacen_a5c60aa6a014eb6a96a2f5c6fb9a83e52}{salas},(cantidad/2)+1,producto);
+31             right = \hyperlink{class_almacen_a0a613fcb43d66dea5965a3588c66110d}{distr}(b.right(),\hyperlink{class_almacen_a5c60aa6a014eb6a96a2f5c6fb9a83e52}{salas},cantidad/2,producto);
+32         \}
+33         
+34         \textcolor{keywordflow}{return} left+right;
+35     \}
+36     \textcolor{keywordflow}{return} cantidad;
+37 \}
+\end{DoxyCode}
+\index{Almacen@{Almacen}!poner\+\_\+items@{poner\+\_\+items}}
+\index{poner\+\_\+items@{poner\+\_\+items}!Almacen@{Almacen}}
+\subsubsection[{\texorpdfstring{poner\+\_\+items(int id, string producto, int cantidad, Inventario \&i)}{poner_items(int id, string producto, int cantidad, Inventario &i)}}]{\setlength{\rightskip}{0pt plus 5cm}void Almacen\+::poner\+\_\+items (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{string}]{producto, }
+\item[{int}]{cantidad, }
+\item[{{\bf Inventario} \&}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{class_almacen_a5532f34bea73002793d637b2031698c8}{}\label{class_almacen_a5532f34bea73002793d637b2031698c8}
+
+
+Coloca una cantidad de productos en la sala \char`\"{}id\char`\"{}. 
+
+\begin{DoxyPrecond}{Precondición}
+Valor de id entre 1 y numero de salas. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Si el producto se encuentra en el inventario, se colocaran tantos como se deseen en la sala \char`\"{}id\char`\"{}, se actualizará el inventario, y se indicara los articulos sobrantes por el canal de salida estandar. Si el producto no está en el inventario, se producira un error. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Logaritmico respecto a la cantidad de objetos del inventario + lineal respecto al tamaño de la estanteria de la sala id. 
+\end{DoxyParagraph}
+
+
+Definición en la línea 49 del archivo Almacen.\+cc.
+
+
+\begin{DoxyCode}
+49                                                                              \{
+50     map <string,int>::iterator it;
+51     \textcolor{keywordflow}{if} (i.\hyperlink{class_inventario_a40f900ef1c0cdde02586ad56e06db58f}{exist\_prod}(it,producto))\{
+52         \textcolor{keywordtype}{int} sobras = \hyperlink{class_almacen_a5c60aa6a014eb6a96a2f5c6fb9a83e52}{salas}[\textcolor{keywordtype}{id}-1].poner\_items(producto,cantidad);
+53         i.\hyperlink{class_inventario_ad11573bc6099edb9cf7bf63501b1a85f}{actualizar\_inven}(it, cantidad - sobras, 1);
+54         cout << \textcolor{stringliteral}{"  "} << sobras << endl;
+55     \}
+56     \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"  error"} << endl;
+57 \}
+\end{DoxyCode}
+\index{Almacen@{Almacen}!quitar\+\_\+items@{quitar\+\_\+items}}
+\index{quitar\+\_\+items@{quitar\+\_\+items}!Almacen@{Almacen}}
+\subsubsection[{\texorpdfstring{quitar\+\_\+items(int id, string producto, int cantidad, Inventario \&i)}{quitar_items(int id, string producto, int cantidad, Inventario &i)}}]{\setlength{\rightskip}{0pt plus 5cm}void Almacen\+::quitar\+\_\+items (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{string}]{producto, }
+\item[{int}]{cantidad, }
+\item[{{\bf Inventario} \&}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{class_almacen_ab28cb9537ce54d2c67d1c85f69c2e09c}{}\label{class_almacen_ab28cb9537ce54d2c67d1c85f69c2e09c}
+
+
+Coloca una cantidad de productos en la sala \char`\"{}id\char`\"{}. 
+
+\begin{DoxyPrecond}{Precondición}
+valor de id entre 1 y numero de salas. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Si el producto se encuentra en el inventario, se quitaran tantos como se deseen de la sala \char`\"{}id\char`\"{}, se actualizará el inventario, y se indicara los articulos que no se han podido quitar por el canal de salida estandar. Si el producto no está en el inventario, se producira un error. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Logaritmico respecto a la cantidad de objetos del inventario + lineal respecto al tamaño de la estanteria de la sala \char`\"{}id\char`\"{}. 
+\end{DoxyParagraph}
+
+
+Definición en la línea 59 del archivo Almacen.\+cc.
+
+
+\begin{DoxyCode}
+59                                                                               \{
+60     map <string,int>::iterator it;
+61     \textcolor{keywordflow}{if} (i.\hyperlink{class_inventario_a40f900ef1c0cdde02586ad56e06db58f}{exist\_prod}(it, producto))\{
+62         \textcolor{keywordtype}{int} no\_encontrados = \hyperlink{class_almacen_a5c60aa6a014eb6a96a2f5c6fb9a83e52}{salas}[\textcolor{keywordtype}{id}-1].quitar\_items(producto,cantidad);
+63         i.\hyperlink{class_inventario_ad11573bc6099edb9cf7bf63501b1a85f}{actualizar\_inven}(it, cantidad - no\_encontrados, 0);
+64         cout << \textcolor{stringliteral}{"  "} << no\_encontrados << endl;
+65     \}
+66     \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"  error"} << endl;
+67 \}
+\end{DoxyCode}
+\index{Almacen@{Almacen}!distribuir@{distribuir}}
+\index{distribuir@{distribuir}!Almacen@{Almacen}}
+\subsubsection[{\texorpdfstring{distribuir(string producto, int cantidad, Inventario \&i)}{distribuir(string producto, int cantidad, Inventario &i)}}]{\setlength{\rightskip}{0pt plus 5cm}void Almacen\+::distribuir (
+\begin{DoxyParamCaption}
+\item[{string}]{producto, }
+\item[{int}]{cantidad, }
+\item[{{\bf Inventario} \&}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{class_almacen_a9e266b71d6ab186830abb7b3a367ecc0}{}\label{class_almacen_a9e266b71d6ab186830abb7b3a367ecc0}
+
+
+Operacion de distribucion. 
+
+\begin{DoxyPrecond}{Precondición}
+\char`\"{}b\char`\"{} no esta vacio y tendra 2 identificadores de salas adyacentes o ninguno, \char`\"{}cantidad\char`\"{} es un numero natural 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Si el producto se encuentra en el inventario \char`\"{}i\char`\"{}, se habra distribuido comenzando por la sala inicial de la siguiente forma\+: Primero se pondran todos los productos posibles en la sala en la que se encuentra. Si sobran unidades se repartiran de forma equitativa por las salas adyacentes a la que se encuentra, si las unidades sobrantes es impar, por la sala que esté a la izquierda una unidad más. Por el canal de la salida estandar se habrá escrito el numero de unidades que hayan sobrado al ir haciendo esta operacion por todo el almacen. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal respecto a la suma del tamaño de todas las estanterias de las salas del almacen. 
+\end{DoxyParagraph}
+
+
+Definición en la línea 69 del archivo Almacen.\+cc.
+
+
+\begin{DoxyCode}
+69                                                                      \{
+70     map <string,int>::iterator it;
+71     \textcolor{keywordflow}{if} (i.\hyperlink{class_inventario_a40f900ef1c0cdde02586ad56e06db58f}{exist\_prod}(it, producto))\{
+72         \textcolor{keywordtype}{int} sobras = \hyperlink{class_almacen_a0a613fcb43d66dea5965a3588c66110d}{distr}(\hyperlink{class_almacen_a32ee5ed02255216a7ec6ac90e5d2030b}{alm},\hyperlink{class_almacen_a5c60aa6a014eb6a96a2f5c6fb9a83e52}{salas},cantidad,producto);
+73         i.\hyperlink{class_inventario_ad11573bc6099edb9cf7bf63501b1a85f}{actualizar\_inven}(it, cantidad-sobras,1);
+74         cout << \textcolor{stringliteral}{"  "} << sobras << endl;
+75     \}
+76     \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"  error"} << endl;
+77 \}
+\end{DoxyCode}
+\index{Almacen@{Almacen}!compactar@{compactar}}
+\index{compactar@{compactar}!Almacen@{Almacen}}
+\subsubsection[{\texorpdfstring{compactar(int id)}{compactar(int id)}}]{\setlength{\rightskip}{0pt plus 5cm}void Almacen\+::compactar (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{class_almacen_a9b0a893ac5ea4774bd362e297b2c3770}{}\label{class_almacen_a9b0a893ac5ea4774bd362e297b2c3770}
+
+
+Compactadora de sala especifica. 
+
+\begin{DoxyPrecond}{Precondición}
+Valor de id entre 1 y numero de salas del parametro implicito. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se compacta la sala id desplazando los productos hacia abajo a la izquiera y sin dejar espacio entre producto y producto. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal respecto al tamño de la estanteria de la sala \char`\"{}id\char`\"{}. 
+\end{DoxyParagraph}
+
+
+Definición en la línea 79 del archivo Almacen.\+cc.
+
+
+\begin{DoxyCode}
+79                               \{
+80     \hyperlink{class_almacen_a5c60aa6a014eb6a96a2f5c6fb9a83e52}{salas}[\textcolor{keywordtype}{id}-1].compactar();
+81 \}
+\end{DoxyCode}
+\index{Almacen@{Almacen}!reorganizar@{reorganizar}}
+\index{reorganizar@{reorganizar}!Almacen@{Almacen}}
+\subsubsection[{\texorpdfstring{reorganizar(int id)}{reorganizar(int id)}}]{\setlength{\rightskip}{0pt plus 5cm}void Almacen\+::reorganizar (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{class_almacen_a9e27219c735096dab9d5d3edc2ae2012}{}\label{class_almacen_a9e27219c735096dab9d5d3edc2ae2012}
+
+
+Reorganizadora de sala especifica. 
+
+\begin{DoxyPrecond}{Precondición}
+Valor de id entre 1 y numero de salas del parametro implicito. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se compacta la sala id y ademas se dejan los productos en orden alfabetico. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal respecto al tamaño de la estanteria de la sala \char`\"{}id\char`\"{}. 
+\end{DoxyParagraph}
+
+
+Definición en la línea 83 del archivo Almacen.\+cc.
+
+
+\begin{DoxyCode}
+83                                 \{
+84     \hyperlink{class_almacen_a5c60aa6a014eb6a96a2f5c6fb9a83e52}{salas}[\textcolor{keywordtype}{id}-1].reorganizar();
+85 \}
+\end{DoxyCode}
+\index{Almacen@{Almacen}!redimensionar@{redimensionar}}
+\index{redimensionar@{redimensionar}!Almacen@{Almacen}}
+\subsubsection[{\texorpdfstring{redimensionar(int id, int f, int c)}{redimensionar(int id, int f, int c)}}]{\setlength{\rightskip}{0pt plus 5cm}void Almacen\+::redimensionar (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{int}]{f, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{class_almacen_a477373756d8671d1acef1c7d84a926a9}{}\label{class_almacen_a477373756d8671d1acef1c7d84a926a9}
+
+
+Redimensionadora de sala especifica. 
+
+\begin{DoxyPrecond}{Precondición}
+Valor de id entre 1 y numero de salas del parametro implicito, el valor de f y c es un numero natural. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se le dara un nuevo tamaño fxc a la sala id si los productos de esta caben en la nueva, en caso contrario se producirá un error. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal respecto al tamaño de la estanteria de la sala \char`\"{}id\char`\"{} + lineal respecto a las dimensiones de la nueva estanteria. 
+\end{DoxyParagraph}
+
+
+Definición en la línea 87 del archivo Almacen.\+cc.
+
+
+\begin{DoxyCode}
+87                                                \{
+88     \textcolor{keywordflow}{if} (not \hyperlink{class_almacen_a5c60aa6a014eb6a96a2f5c6fb9a83e52}{salas}[\textcolor{keywordtype}{id}-1].\hyperlink{class_almacen_a477373756d8671d1acef1c7d84a926a9}{redimensionar}(f,c)) cout << \textcolor{stringliteral}{"  error"} << endl;
+89 \}
+\end{DoxyCode}
+\index{Almacen@{Almacen}!consultar\+\_\+pos@{consultar\+\_\+pos}}
+\index{consultar\+\_\+pos@{consultar\+\_\+pos}!Almacen@{Almacen}}
+\subsubsection[{\texorpdfstring{consultar\+\_\+pos(int id, int f, int c) const }{consultar_pos(int id, int f, int c) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Almacen\+::consultar\+\_\+pos (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{int}]{f, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_almacen_af3a411fa6f4e0d5b327697bdcd08c41c}{}\label{class_almacen_af3a411fa6f4e0d5b327697bdcd08c41c}
+
+
+Consultora por posicion y sala. 
+
+\begin{DoxyPrecond}{Precondición}
+Valor de id entre 1 y numero de salas del parametro implicito, valor de f entre 1 y numero de filas de la sala \char`\"{}id\char`\"{}, valor de c entre 1 y numero de columnas en la sala \char`\"{}id\char`\"{}. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se devuelve el producto que se encuentra en la sala \char`\"{}id\char`\"{}, fila \char`\"{}f\char`\"{}, columna \char`\"{}c\char`\"{}. En caso de no haber nada se devolvera \char`\"{}\+N\+U\+L\+L\char`\"{}. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Constante 
+\end{DoxyParagraph}
+
+
+Definición en la línea 93 del archivo Almacen.\+cc.
+
+
+\begin{DoxyCode}
+93                                                      \{
+94     cout << \textcolor{stringliteral}{"  "} << \hyperlink{class_almacen_a5c60aa6a014eb6a96a2f5c6fb9a83e52}{salas}[\textcolor{keywordtype}{id}-1].consultar\_pos(f,c) << endl;
+95 \}
+\end{DoxyCode}
+\index{Almacen@{Almacen}!inisalas@{inisalas}}
+\index{inisalas@{inisalas}!Almacen@{Almacen}}
+\subsubsection[{\texorpdfstring{inisalas()}{inisalas()}}]{\setlength{\rightskip}{0pt plus 5cm}void Almacen\+::inisalas (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_almacen_a4ed23c4daa30f40be6fb8986ab04cbef}{}\label{class_almacen_a4ed23c4daa30f40be6fb8986ab04cbef}
+
+
+Da tamaño a cada una de las salas del almacen. 
+
+\begin{DoxyPrecond}{Precondición}
+Por el canal estandar de entrada hay tantas parejas de numeros como salas tiene el almacen. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Cada una de las salas del parametro implicito estará dimensionada con las dimensiones del canal de entrada. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal respecto a la suma de las dimensiones de todas las salas. 
+\end{DoxyParagraph}
+
+
+Definición en la línea 99 del archivo Almacen.\+cc.
+
+
+\begin{DoxyCode}
+99                       \{
+100     \textcolor{keywordtype}{int} n = \hyperlink{class_almacen_a5c60aa6a014eb6a96a2f5c6fb9a83e52}{salas}.size();
+101     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0;i < n; ++i)\{
+102         \textcolor{keywordtype}{int} f,c;
+103         cin >> f >> c;
+104         \hyperlink{class_almacen_a5c60aa6a014eb6a96a2f5c6fb9a83e52}{salas}[i] = \hyperlink{class_sala}{Sala} (f,c);
+105     \}
+106 \}
+\end{DoxyCode}
+\index{Almacen@{Almacen}!creabtree@{creabtree}}
+\index{creabtree@{creabtree}!Almacen@{Almacen}}
+\subsubsection[{\texorpdfstring{creabtree()}{creabtree()}}]{\setlength{\rightskip}{0pt plus 5cm}void Almacen\+::creabtree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_almacen_aee1a1a170d9712b5988692cb93791a4c}{}\label{class_almacen_aee1a1a170d9712b5988692cb93791a4c}
+
+
+Inicializa la estructura del almacen. 
+
+\begin{DoxyPrecond}{Precondición}
+La distribucion de salas del parametro implicito no ha sido inicializado. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parametro implicito contiene identificadores de salas ordenado de forma jerarquizada. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 108 del archivo Almacen.\+cc.
+
+
+\begin{DoxyCode}
+108                        \{
+109     \hyperlink{class_almacen_ab17f45bbf11a4c178ee4acefd6d085eb}{btree} (\hyperlink{class_almacen_a32ee5ed02255216a7ec6ac90e5d2030b}{alm});
+110 \}
+\end{DoxyCode}
+\index{Almacen@{Almacen}!escribir@{escribir}}
+\index{escribir@{escribir}!Almacen@{Almacen}}
+\subsubsection[{\texorpdfstring{escribir(int id) const }{escribir(int id) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Almacen\+::escribir (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_almacen_a139a466ffe4ed01057a19607e1c4d437}{}\label{class_almacen_a139a466ffe4ed01057a19607e1c4d437}
+
+
+Operacion de escritura de la sala con identificador \char`\"{}id\char`\"{}. 
+
+\begin{DoxyPrecond}{Precondición}
+Valor id entre 1 y numero de salas del parametro implicito. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Escribe el contenido de la sala id, la cantidad de objetos, y las unidades que hay de cada objeto por orden de existencia de estanteria en esta sala id por el canal estándar de salida. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 112 del archivo Almacen.\+cc.
+
+
+\begin{DoxyCode}
+112                                    \{
+113     \hyperlink{class_almacen_a5c60aa6a014eb6a96a2f5c6fb9a83e52}{salas}[\textcolor{keywordtype}{id}-1].escribir();
+114 \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\index{Almacen@{Almacen}!alm@{alm}}
+\index{alm@{alm}!Almacen@{Almacen}}
+\subsubsection[{\texorpdfstring{alm}{alm}}]{\setlength{\rightskip}{0pt plus 5cm}Bin\+Tree$<$int$>$ Almacen\+::alm\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_almacen_a32ee5ed02255216a7ec6ac90e5d2030b}{}\label{class_almacen_a32ee5ed02255216a7ec6ac90e5d2030b}
+
+
+Estructura de las salas en el almacen. 
+
+
+
+Definición en la línea 21 del archivo Almacen.\+hh.
+
+\index{Almacen@{Almacen}!salas@{salas}}
+\index{salas@{salas}!Almacen@{Almacen}}
+\subsubsection[{\texorpdfstring{salas}{salas}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Sala}$>$ Almacen\+::salas\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_almacen_a5c60aa6a014eb6a96a2f5c6fb9a83e52}{}\label{class_almacen_a5c60aa6a014eb6a96a2f5c6fb9a83e52}
+
+
+Vector que contiene cada una de las salas del almacen. 
+
+
+
+Definición en la línea 23 del archivo Almacen.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_almacen_8hh}{Almacen.\+hh}\item 
+\hyperlink{_almacen_8cc}{Almacen.\+cc}\end{DoxyCompactItemize}

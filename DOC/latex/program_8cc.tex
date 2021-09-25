@@ -1,0 +1,148 @@
+\hypertarget{program_8cc}{}\section{Referencia del Archivo program.\+cc}
+\label{program_8cc}\index{program.\+cc@{program.\+cc}}
+
+
+Programa principal para la practica {\itshape Tree\+K\+EA}.  
+
+
+Dependencia gráfica adjunta para program.\+cc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{program_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\begin{DoxyCompactList}\small\item\em Programa principal para la practica {\itshape Tree\+K\+EA}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Programa principal para la practica {\itshape Tree\+K\+EA}. 
+
+
+
+\subsection{Documentación de las funciones}
+\index{program.\+cc@{program.\+cc}!main@{main}}
+\index{main@{main}!program.\+cc@{program.\+cc}}
+\subsubsection[{\texorpdfstring{main()}{main()}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{}\label{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+Programa principal para la practica {\itshape Tree\+K\+EA}. 
+
+Los datos que se leeran seran siempre correctos respecto al enunciado de la practica. No hay ninguna comprobacion al respecto (ejemplo\+: consultar sala 8 en un almacen de 7 salas). Aqui se leeran y ejecutaran las instrucciones escritas por el usuario. 
+
+Definición en la línea 25 del archivo program.\+cc.
+
+
+\begin{DoxyCode}
+25           \{
+26     \textcolor{keywordtype}{int} n;
+27     cin>>n;
+28     
+29     \hyperlink{class_almacen}{Almacen} a (n);
+30     a.creabtree();
+31     a.inisalas();
+32     
+33     \hyperlink{class_inventario}{Inventario} inven;
+34     
+35     \textcolor{keywordtype}{string} op;
+36     \textcolor{keywordflow}{while} (cin>>op and op != \textcolor{stringliteral}{"fin"})\{
+37         cout << op ;
+38         
+39         \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"poner\_prod"})\{
+40             \textcolor{keywordtype}{string} p;
+41             cin >> p;
+42             cout << \textcolor{stringliteral}{" "} << p << endl;
+43             inven.\hyperlink{class_inventario_abe2124eed6c79aca488754a28142a3a6}{poner\_prod}(p);
+44         \}
+45         
+46         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"quitar\_prod"})\{
+47             \textcolor{keywordtype}{string} p;
+48             cin >> p;
+49             cout << \textcolor{stringliteral}{" "} << p << endl;
+50             inven.\hyperlink{class_inventario_a7a9da8d5d032fc99b5a423209f871f8b}{quitar\_prod}(p);
+51         \}
+52         
+53         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"poner\_items"})\{
+54             \textcolor{keywordtype}{int} id,cant;
+55             \textcolor{keywordtype}{string} prod;
+56             cin >> \textcolor{keywordtype}{id} >> prod >> cant;
+57             cout << \textcolor{stringliteral}{" "} << \textcolor{keywordtype}{id} << \textcolor{stringliteral}{" "}<< prod << \textcolor{stringliteral}{" "} << cant << endl;
+58             a.poner\_items(\textcolor{keywordtype}{id}, prod, cant, inven);
+59         \}
+60         
+61         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"quitar\_items"})\{
+62             \textcolor{keywordtype}{int} id,cant;
+63             \textcolor{keywordtype}{string} prod;
+64             cin >> \textcolor{keywordtype}{id} >> prod >> cant;
+65             cout << \textcolor{stringliteral}{" "} << \textcolor{keywordtype}{id} << \textcolor{stringliteral}{" "} << prod << \textcolor{stringliteral}{" "} << cant << endl;
+66             a.quitar\_items(\textcolor{keywordtype}{id}, prod, cant, inven);
+67         \}
+68         
+69         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"distribuir"})\{
+70             \textcolor{keywordtype}{string} prod;
+71             \textcolor{keywordtype}{int} cant;
+72             cin >> prod >> cant;
+73             cout << \textcolor{stringliteral}{" "} << prod << \textcolor{stringliteral}{" "} << cant << endl;
+74             a.distribuir(prod, cant, inven);
+75         \}
+76         
+77         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"compactar"})\{
+78             \textcolor{keywordtype}{int} id;
+79             cin >> id;
+80             cout << \textcolor{stringliteral}{" "} << \textcolor{keywordtype}{id} << endl;
+81             a.compactar(\textcolor{keywordtype}{id});
+82         \}
+83         
+84         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"reorganizar"})\{
+85             \textcolor{keywordtype}{int} id;
+86             cin >> id;
+87             cout <<  \textcolor{stringliteral}{" "} << \textcolor{keywordtype}{id} << endl;
+88             a.reorganizar(\textcolor{keywordtype}{id});
+89         \}
+90         
+91         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"redimensionar"})\{
+92             \textcolor{keywordtype}{int} id, f, c;
+93             cin >> \textcolor{keywordtype}{id} >> f >> c;
+94             cout << \textcolor{stringliteral}{" "} << \textcolor{keywordtype}{id} << \textcolor{stringliteral}{" "} << f << \textcolor{stringliteral}{" "} << c << endl;
+95             a.redimensionar(\textcolor{keywordtype}{id}, f ,c);
+96         \}
+97         
+98         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"inventario"})\{
+99             cout << endl;
+100             inven.\hyperlink{class_inventario_aa764715a4df95aed453d73a8d509e344}{consultar\_inven}();
+101         \}
+102         
+103         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"escribir"})\{
+104             \textcolor{keywordtype}{int} id;
+105             cin>>id;
+106             cout<< \textcolor{stringliteral}{" "} << \textcolor{keywordtype}{id} << endl;
+107             a.escribir(\textcolor{keywordtype}{id});
+108         \}
+109         
+110         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"consultar\_pos"})\{
+111             \textcolor{keywordtype}{int} id, f ,c;
+112             cin >> \textcolor{keywordtype}{id} >> f >> c;
+113             cout << \textcolor{stringliteral}{" "} << \textcolor{keywordtype}{id} << \textcolor{stringliteral}{" "}<< f << \textcolor{stringliteral}{" "} << c <<endl;
+114             a.consultar\_pos(\textcolor{keywordtype}{id}, f, c);
+115         \}
+116         
+117         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"consultar\_prod"})\{
+118             \textcolor{keywordtype}{string} prod;
+119             cin >> prod;
+120             cout << \textcolor{stringliteral}{" "} << prod << endl;
+121             inven.\hyperlink{class_inventario_aa8c8b617c44b44819e9dcae3894eeecc}{consultar\_prod}(prod);
+122         \}
+123     \}
+124     
+125     cout << op << endl;
+126 \}
+\end{DoxyCode}

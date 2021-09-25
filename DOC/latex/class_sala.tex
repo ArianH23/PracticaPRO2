@@ -1,0 +1,490 @@
+\hypertarget{class_sala}{}\section{Referencia de la Clase Sala}
+\label{class_sala}\index{Sala@{Sala}}
+
+
+Representa una sala de un numero de filas y columnas.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_sala_afcf1b7b533e776b043ce8fb13c6268ca}{Sala} ()
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
+\hyperlink{class_sala_a9dd46530cc9e29341f692ee127fa5753}{Sala} (int f, int c)
+\begin{DoxyCompactList}\small\item\em Creadora por dimensiones. \end{DoxyCompactList}\item 
+int \hyperlink{class_sala_a744e44e1d14431a9589396a21983795e}{poner\+\_\+items} (string producto, int cantidad)
+\begin{DoxyCompactList}\small\item\em Coloca una cantidad de productos en la sala. \end{DoxyCompactList}\item 
+int \hyperlink{class_sala_aacda981f2c12c9d7f815f6933982ca2f}{quitar\+\_\+items} (string producto, int cantidad)
+\begin{DoxyCompactList}\small\item\em Coloca una cantidad de productos en la sala. \end{DoxyCompactList}\item 
+void \hyperlink{class_sala_aac11486a22560bdcdb7771e9692cfa75}{compactar} ()
+\begin{DoxyCompactList}\small\item\em Compactadora. \end{DoxyCompactList}\item 
+void \hyperlink{class_sala_aaac8d848595b493ea08516f2101b829e}{reorganizar} ()
+\begin{DoxyCompactList}\small\item\em Reorganizadora. \end{DoxyCompactList}\item 
+bool \hyperlink{class_sala_a0cc52e1cce4b5b6817d5023b4b501d74}{redimensionar} (int f, int c)
+\begin{DoxyCompactList}\small\item\em Redimensionadora. \end{DoxyCompactList}\item 
+string \hyperlink{class_sala_a10ebb5fa73d3a8d5202960b3e7dc0605}{consultar\+\_\+pos} (int f, int c) const 
+\begin{DoxyCompactList}\small\item\em Indica cual es el producto en la posición (f,c) de la sala. \end{DoxyCompactList}\item 
+void \hyperlink{class_sala_a31cac453fd5002b715706482b207ac1f}{escribir} () const 
+\begin{DoxyCompactList}\small\item\em Escribe el contenido de la sala. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ string $>$ \hyperlink{class_sala_ad5a8ee89a13199441da41fee39a80444}{estante}
+\begin{DoxyCompactList}\small\item\em Estante que contiene los productos de una sala. \end{DoxyCompactList}\item 
+int \hyperlink{class_sala_a090b8f87fae0a129fb45ef59163a2820}{fila}
+\begin{DoxyCompactList}\small\item\em Indica el numero de filas de la sala. \end{DoxyCompactList}\item 
+int \hyperlink{class_sala_a72a33e3787879e17844a904e19c6a4b4}{col}
+\begin{DoxyCompactList}\small\item\em Indica el numero de columnas de la sala. \end{DoxyCompactList}\item 
+int \hyperlink{class_sala_aeb69af6cc00cfc97cfa4d18e1bd5e232}{cant\+\_\+prod}
+\begin{DoxyCompactList}\small\item\em Indica el numero de productos que hay en una sala. \end{DoxyCompactList}\item 
+map$<$ string, int $>$ \hyperlink{class_sala_a1eea693397545de9c4750859bb58eae8}{coleccion}
+\begin{DoxyCompactList}\small\item\em Diccionario que contiene la cantidad de cada producto que hay en una sala. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa una sala de un numero de filas y columnas. 
+
+En esta se pueden almacenar productos, la cantidad de filas y de columnas de la sala sera mayor o igual que 1. 
+
+Definición en la línea 20 del archivo Sala.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\index{Sala@{Sala}!Sala@{Sala}}
+\index{Sala@{Sala}!Sala@{Sala}}
+\subsubsection[{\texorpdfstring{Sala()}{Sala()}}]{\setlength{\rightskip}{0pt plus 5cm}Sala\+::\+Sala (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sala_afcf1b7b533e776b043ce8fb13c6268ca}{}\label{class_sala_afcf1b7b533e776b043ce8fb13c6268ca}
+
+
+Creadora por defecto. 
+
+Se ejecuta automáticamente al declarar una sala. \begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es una sala vacia. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Constante. 
+\end{DoxyParagraph}
+
+
+Definición en la línea 8 del archivo Sala.\+cc.
+
+
+\begin{DoxyCode}
+8           \{
+9     \hyperlink{class_sala_a090b8f87fae0a129fb45ef59163a2820}{fila} = 0;
+10     \hyperlink{class_sala_a72a33e3787879e17844a904e19c6a4b4}{col} = 0;
+11     \hyperlink{class_sala_aeb69af6cc00cfc97cfa4d18e1bd5e232}{cant\_prod} = 0;
+12 \}
+\end{DoxyCode}
+\index{Sala@{Sala}!Sala@{Sala}}
+\index{Sala@{Sala}!Sala@{Sala}}
+\subsubsection[{\texorpdfstring{Sala(int f, int c)}{Sala(int f, int c)}}]{\setlength{\rightskip}{0pt plus 5cm}Sala\+::\+Sala (
+\begin{DoxyParamCaption}
+\item[{int}]{f, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sala_a9dd46530cc9e29341f692ee127fa5753}{}\label{class_sala_a9dd46530cc9e29341f692ee127fa5753}
+
+
+Creadora por dimensiones. 
+
+Se ejecuta automáticamente al declarar una sala. \begin{DoxyPrecond}{Precondición}
+El valor de f y c es un numero natural 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es una sala de dimensiones f$\ast$c vacia (todo \char`\"{}\+N\+U\+L\+L\char`\"{}). 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal respecto a f$\ast$c. 
+\end{DoxyParagraph}
+
+
+Definición en la línea 14 del archivo Sala.\+cc.
+
+
+\begin{DoxyCode}
+14                       \{
+15     \hyperlink{class_sala_ad5a8ee89a13199441da41fee39a80444}{estante} = vector <string> (f*c,\textcolor{stringliteral}{"NULL"});
+16     \hyperlink{class_sala_a090b8f87fae0a129fb45ef59163a2820}{fila} = f;
+17     \hyperlink{class_sala_a72a33e3787879e17844a904e19c6a4b4}{col} = c;
+18     \hyperlink{class_sala_aeb69af6cc00cfc97cfa4d18e1bd5e232}{cant\_prod} = 0;
+19 \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\index{Sala@{Sala}!poner\+\_\+items@{poner\+\_\+items}}
+\index{poner\+\_\+items@{poner\+\_\+items}!Sala@{Sala}}
+\subsubsection[{\texorpdfstring{poner\+\_\+items(string producto, int cantidad)}{poner_items(string producto, int cantidad)}}]{\setlength{\rightskip}{0pt plus 5cm}int Sala\+::poner\+\_\+items (
+\begin{DoxyParamCaption}
+\item[{string}]{producto, }
+\item[{int}]{cantidad}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sala_a744e44e1d14431a9589396a21983795e}{}\label{class_sala_a744e44e1d14431a9589396a21983795e}
+
+
+Coloca una cantidad de productos en la sala. 
+
+\begin{DoxyPrecond}{Precondición}
+El valor de cantidad es un numero natural. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parametro implicito contendra todos los productos que se hayan podido meter y se devolvera las unidades que no quepan. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal respecto al tamaño de la estanteria de la sala. 
+\end{DoxyParagraph}
+
+
+Definición en la línea 23 del archivo Sala.\+cc.
+
+
+\begin{DoxyCode}
+23                                                  \{
+24     \textcolor{keywordtype}{int} tam = \hyperlink{class_sala_a090b8f87fae0a129fb45ef59163a2820}{fila} * \hyperlink{class_sala_a72a33e3787879e17844a904e19c6a4b4}{col};
+25     \textcolor{keywordtype}{int} cant\_inicial\_por\_quitar = cantidad;
+26     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = tam-1;cantidad > 0 and \hyperlink{class_sala_aeb69af6cc00cfc97cfa4d18e1bd5e232}{cant\_prod} < tam; --i)\{
+27         \textcolor{keywordflow}{if} (\hyperlink{class_sala_ad5a8ee89a13199441da41fee39a80444}{estante}[i] == \textcolor{stringliteral}{"NULL"})\{
+28             \hyperlink{class_sala_ad5a8ee89a13199441da41fee39a80444}{estante}[i] = producto;
+29             ++\hyperlink{class_sala_aeb69af6cc00cfc97cfa4d18e1bd5e232}{cant\_prod};
+30             --cantidad;
+31         \}
+32     \}
+33     \textcolor{keywordflow}{if} (cant\_inicial\_por\_quitar - cantidad != 0) \hyperlink{class_sala_a1eea693397545de9c4750859bb58eae8}{coleccion}[producto] += (cant\_inicial\_por\_quitar -
+       cantidad);
+34     \textcolor{keywordflow}{return} cantidad;
+35 \}
+\end{DoxyCode}
+\index{Sala@{Sala}!quitar\+\_\+items@{quitar\+\_\+items}}
+\index{quitar\+\_\+items@{quitar\+\_\+items}!Sala@{Sala}}
+\subsubsection[{\texorpdfstring{quitar\+\_\+items(string producto, int cantidad)}{quitar_items(string producto, int cantidad)}}]{\setlength{\rightskip}{0pt plus 5cm}int Sala\+::quitar\+\_\+items (
+\begin{DoxyParamCaption}
+\item[{string}]{producto, }
+\item[{int}]{cantidad}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sala_aacda981f2c12c9d7f815f6933982ca2f}{}\label{class_sala_aacda981f2c12c9d7f815f6933982ca2f}
+
+
+Coloca una cantidad de productos en la sala. 
+
+\begin{DoxyPrecond}{Precondición}
+El valor de cantidad es un numero natural. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parametro implicito se le habra quitado una cantidad de productos y se devolvera el numero de productos que no se han quitado porque no estaban. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Logaritmico respecto a los diferentes productos que puedan haber en la estanteria + lineal respecto a f$\ast$c. 
+\end{DoxyParagraph}
+
+
+Definición en la línea 37 del archivo Sala.\+cc.
+
+
+\begin{DoxyCode}
+37                                                     \{
+38     map <string,int> :: iterator it = \hyperlink{class_sala_a1eea693397545de9c4750859bb58eae8}{coleccion}.find(producto);
+39     \textcolor{keywordflow}{if} (it!= \hyperlink{class_sala_a1eea693397545de9c4750859bb58eae8}{coleccion}.end())\{
+40         \textcolor{keywordtype}{int} iniciales = it->second;
+41         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = (\hyperlink{class_sala_a090b8f87fae0a129fb45ef59163a2820}{fila}*\hyperlink{class_sala_a72a33e3787879e17844a904e19c6a4b4}{col})-1; it->second > 0 and cantidad > 0; --i)\{
+42             \textcolor{keywordflow}{if} (\hyperlink{class_sala_ad5a8ee89a13199441da41fee39a80444}{estante}[i] == producto)\{
+43                 \hyperlink{class_sala_ad5a8ee89a13199441da41fee39a80444}{estante}[i] = \textcolor{stringliteral}{"NULL"};
+44                 --it->second;
+45                 --cantidad;
+46             \}
+47         \}
+48         \hyperlink{class_sala_aeb69af6cc00cfc97cfa4d18e1bd5e232}{cant\_prod} -=(iniciales - it->second);
+49         \textcolor{keywordflow}{if} (it->second == 0) \hyperlink{class_sala_a1eea693397545de9c4750859bb58eae8}{coleccion}.erase(it);
+50     \}
+51     \textcolor{keywordflow}{return} cantidad;
+52 \}
+\end{DoxyCode}
+\index{Sala@{Sala}!compactar@{compactar}}
+\index{compactar@{compactar}!Sala@{Sala}}
+\subsubsection[{\texorpdfstring{compactar()}{compactar()}}]{\setlength{\rightskip}{0pt plus 5cm}void Sala\+::compactar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sala_aac11486a22560bdcdb7771e9692cfa75}{}\label{class_sala_aac11486a22560bdcdb7771e9692cfa75}
+
+
+Compactadora. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Los productos de la sala se habran deplazado hacia abajo a la izquierda sin dejar ningun hueco entre ellos. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal respecto al tamaño de la estanteria de la sala. 
+\end{DoxyParagraph}
+
+
+Definición en la línea 54 del archivo Sala.\+cc.
+
+
+\begin{DoxyCode}
+54                      \{
+55     \textcolor{keywordflow}{if} (\hyperlink{class_sala_aeb69af6cc00cfc97cfa4d18e1bd5e232}{cant\_prod} != \hyperlink{class_sala_a090b8f87fae0a129fb45ef59163a2820}{fila}*\hyperlink{class_sala_a72a33e3787879e17844a904e19c6a4b4}{col})\{
+56         \textcolor{keywordtype}{int} npos = (\hyperlink{class_sala_a090b8f87fae0a129fb45ef59163a2820}{fila}*\hyperlink{class_sala_a72a33e3787879e17844a904e19c6a4b4}{col})-1;
+57         \textcolor{keywordtype}{int} contador = 0;
+58 
+59         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = npos; contador < \hyperlink{class_sala_aeb69af6cc00cfc97cfa4d18e1bd5e232}{cant\_prod}; --i)\{
+60             \textcolor{keywordflow}{if} (\hyperlink{class_sala_ad5a8ee89a13199441da41fee39a80444}{estante}[i] != \textcolor{stringliteral}{"NULL"})\{
+61                 ++contador;
+62                 \textcolor{keywordflow}{if} (i != npos)\{
+63                     \hyperlink{class_sala_ad5a8ee89a13199441da41fee39a80444}{estante}[npos] = \hyperlink{class_sala_ad5a8ee89a13199441da41fee39a80444}{estante}[i];
+64                     \hyperlink{class_sala_ad5a8ee89a13199441da41fee39a80444}{estante}[i] = \textcolor{stringliteral}{"NULL"};
+65                 \}
+66             \}
+67             \textcolor{keywordflow}{if} (\hyperlink{class_sala_ad5a8ee89a13199441da41fee39a80444}{estante}[npos] != \textcolor{stringliteral}{"NULL"})--npos;
+68         \}
+69     \}
+70 \}
+\end{DoxyCode}
+\index{Sala@{Sala}!reorganizar@{reorganizar}}
+\index{reorganizar@{reorganizar}!Sala@{Sala}}
+\subsubsection[{\texorpdfstring{reorganizar()}{reorganizar()}}]{\setlength{\rightskip}{0pt plus 5cm}void Sala\+::reorganizar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sala_aaac8d848595b493ea08516f2101b829e}{}\label{class_sala_aaac8d848595b493ea08516f2101b829e}
+
+
+Reorganizadora. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Los productos de la sala se habran deplazado hacia abajo a la izquierda sin dejar ningun hueco entre ellos y ademas estaran ordenados alfabeticamente. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal respecto al tamaño de la estanteria de la sala. 
+\end{DoxyParagraph}
+
+
+Definición en la línea 72 del archivo Sala.\+cc.
+
+
+\begin{DoxyCode}
+72                        \{
+73     map <string,int> :: const\_iterator it = \hyperlink{class_sala_a1eea693397545de9c4750859bb58eae8}{coleccion}.begin();
+74     \textcolor{keywordtype}{int} npos = \hyperlink{class_sala_ad5a8ee89a13199441da41fee39a80444}{estante}.size()-1;
+75 
+76     \textcolor{keywordflow}{while} (it!= \hyperlink{class_sala_a1eea693397545de9c4750859bb58eae8}{coleccion}.end())\{
+77         \textcolor{keywordtype}{string} prod = it->first;
+78         \textcolor{keywordtype}{int} cant = it->second;
+79 
+80         \textcolor{keywordflow}{while} (cant != 0)\{
+81             \hyperlink{class_sala_ad5a8ee89a13199441da41fee39a80444}{estante}[npos] = prod;
+82             --npos;
+83             --cant;
+84         \}
+85         ++it;
+86     \}
+87 
+88     \textcolor{keywordflow}{while} (npos >= 0)\{
+89         \hyperlink{class_sala_ad5a8ee89a13199441da41fee39a80444}{estante}[npos] = \textcolor{stringliteral}{"NULL"};
+90         --npos;
+91     \}
+92 \}
+\end{DoxyCode}
+\index{Sala@{Sala}!redimensionar@{redimensionar}}
+\index{redimensionar@{redimensionar}!Sala@{Sala}}
+\subsubsection[{\texorpdfstring{redimensionar(int f, int c)}{redimensionar(int f, int c)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Sala\+::redimensionar (
+\begin{DoxyParamCaption}
+\item[{int}]{f, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sala_a0cc52e1cce4b5b6817d5023b4b501d74}{}\label{class_sala_a0cc52e1cce4b5b6817d5023b4b501d74}
+
+
+Redimensionadora. 
+
+\begin{DoxyPrecond}{Precondición}
+El valor de f y c es un numero natural. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Si los productos de la sala inicial caben en una nueva sala de dimensiones f$\ast$c, se colocaran de forma compacta en esta, en caso contrario se producirá un error. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal respecto al tamaño de la nueva estanteria por crear + lineal respecto a la sala inicial. 
+\end{DoxyParagraph}
+
+
+Definición en la línea 94 del archivo Sala.\+cc.
+
+
+\begin{DoxyCode}
+94                                      \{
+95     \textcolor{keywordflow}{if} (\hyperlink{class_sala_aeb69af6cc00cfc97cfa4d18e1bd5e232}{cant\_prod} > f*c) \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+96 
+97     \textcolor{keywordflow}{else}\{
+98         \textcolor{keywordtype}{int} npos = (f*c)-1;
+99         \textcolor{keywordtype}{int} contador = 0;
+100         vector <string> nestante (f*c,\textcolor{stringliteral}{"NULL"});
+101 
+102         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = (\hyperlink{class_sala_a090b8f87fae0a129fb45ef59163a2820}{fila}*\hyperlink{class_sala_a72a33e3787879e17844a904e19c6a4b4}{col})-1; contador < \hyperlink{class_sala_aeb69af6cc00cfc97cfa4d18e1bd5e232}{cant\_prod}; --i)\{
+103             \textcolor{keywordflow}{if} (\hyperlink{class_sala_ad5a8ee89a13199441da41fee39a80444}{estante}[i]!=\textcolor{stringliteral}{"NULL"})\{
+104                 nestante[npos] = \hyperlink{class_sala_ad5a8ee89a13199441da41fee39a80444}{estante}[i];
+105                 ++contador;
+106                 --npos;
+107             \}
+108         \}
+109 
+110         \hyperlink{class_sala_ad5a8ee89a13199441da41fee39a80444}{estante} = nestante;
+111         \hyperlink{class_sala_a090b8f87fae0a129fb45ef59163a2820}{fila} = f;
+112         col = c;
+113         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+114     \}
+115 \}
+\end{DoxyCode}
+\index{Sala@{Sala}!consultar\+\_\+pos@{consultar\+\_\+pos}}
+\index{consultar\+\_\+pos@{consultar\+\_\+pos}!Sala@{Sala}}
+\subsubsection[{\texorpdfstring{consultar\+\_\+pos(int f, int c) const }{consultar_pos(int f, int c) const }}]{\setlength{\rightskip}{0pt plus 5cm}string Sala\+::consultar\+\_\+pos (
+\begin{DoxyParamCaption}
+\item[{int}]{f, }
+\item[{int}]{c}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_sala_a10ebb5fa73d3a8d5202960b3e7dc0605}{}\label{class_sala_a10ebb5fa73d3a8d5202960b3e7dc0605}
+
+
+Indica cual es el producto en la posición (f,c) de la sala. 
+
+\begin{DoxyPrecond}{Precondición}
+El valor de f es mayor o igual que 1 y menor o igual que el numero de filas de la sala.\+El valor de c es mayor o igual que 1 y menor o igual que el numero de columnas de la sala. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve el nombre del producto en la fila f y columna c,si no hay ninguno, se devolverá \char`\"{}\+N\+U\+L\+L\char`\"{}. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Constante 
+\end{DoxyParagraph}
+
+
+Definición en la línea 119 del archivo Sala.\+cc.
+
+
+\begin{DoxyCode}
+119                                            \{
+120     \textcolor{keywordflow}{return} \hyperlink{class_sala_ad5a8ee89a13199441da41fee39a80444}{estante}[\hyperlink{class_sala_a72a33e3787879e17844a904e19c6a4b4}{col} * (f-1) + (\hyperlink{class_sala_a72a33e3787879e17844a904e19c6a4b4}{col} - c)];
+121 \}
+\end{DoxyCode}
+\index{Sala@{Sala}!escribir@{escribir}}
+\index{escribir@{escribir}!Sala@{Sala}}
+\subsubsection[{\texorpdfstring{escribir() const }{escribir() const }}]{\setlength{\rightskip}{0pt plus 5cm}void Sala\+::escribir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_sala_a31cac453fd5002b715706482b207ac1f}{}\label{class_sala_a31cac453fd5002b715706482b207ac1f}
+
+
+Escribe el contenido de la sala. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Escribe por el canal de salida estandar el contenido de la sala,la cantidad de objetos, y las unidades que hay de cada objeto por orden de existencia de estanteria por el canal estándar de salida. 
+\end{DoxyPostcond}
+\begin{DoxyParagraph}{Coste}
+Lineal respecto al tamaño de la estanteria de la sala. 
+\end{DoxyParagraph}
+
+
+Definición en la línea 125 del archivo Sala.\+cc.
+
+
+\begin{DoxyCode}
+125                           \{
+126     \textcolor{keywordtype}{int} n = \hyperlink{class_sala_a090b8f87fae0a129fb45ef59163a2820}{fila}*\hyperlink{class_sala_a72a33e3787879e17844a904e19c6a4b4}{col};
+127 
+128     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = col-1;i < n;i = i + \hyperlink{class_sala_a72a33e3787879e17844a904e19c6a4b4}{col})\{
+129         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0;j < \hyperlink{class_sala_a72a33e3787879e17844a904e19c6a4b4}{col};++j)\{
+130             \textcolor{keywordflow}{if}(j>0) cout << \textcolor{stringliteral}{" "} << \hyperlink{class_sala_ad5a8ee89a13199441da41fee39a80444}{estante}[i-j];
+131             \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"  "} << estante[i-j];
+132         \}
+133         cout << endl;
+134     \}
+135 
+136     cout << \textcolor{stringliteral}{"  "} << \hyperlink{class_sala_aeb69af6cc00cfc97cfa4d18e1bd5e232}{cant\_prod} << endl;
+137 
+138     \textcolor{keywordflow}{for} (map<string,int>::const\_iterator it = \hyperlink{class_sala_a1eea693397545de9c4750859bb58eae8}{coleccion}.begin();it != 
+      \hyperlink{class_sala_a1eea693397545de9c4750859bb58eae8}{coleccion}.end();++it)\{
+139         cout << \textcolor{stringliteral}{"  "} << it->first << \textcolor{stringliteral}{" "} << it->second << endl;
+140     \}
+141 \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\index{Sala@{Sala}!estante@{estante}}
+\index{estante@{estante}!Sala@{Sala}}
+\subsubsection[{\texorpdfstring{estante}{estante}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$string$>$ Sala\+::estante\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_sala_ad5a8ee89a13199441da41fee39a80444}{}\label{class_sala_ad5a8ee89a13199441da41fee39a80444}
+
+
+Estante que contiene los productos de una sala. 
+
+
+
+Definición en la línea 25 del archivo Sala.\+hh.
+
+\index{Sala@{Sala}!fila@{fila}}
+\index{fila@{fila}!Sala@{Sala}}
+\subsubsection[{\texorpdfstring{fila}{fila}}]{\setlength{\rightskip}{0pt plus 5cm}int Sala\+::fila\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_sala_a090b8f87fae0a129fb45ef59163a2820}{}\label{class_sala_a090b8f87fae0a129fb45ef59163a2820}
+
+
+Indica el numero de filas de la sala. 
+
+
+
+Definición en la línea 27 del archivo Sala.\+hh.
+
+\index{Sala@{Sala}!col@{col}}
+\index{col@{col}!Sala@{Sala}}
+\subsubsection[{\texorpdfstring{col}{col}}]{\setlength{\rightskip}{0pt plus 5cm}int Sala\+::col\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_sala_a72a33e3787879e17844a904e19c6a4b4}{}\label{class_sala_a72a33e3787879e17844a904e19c6a4b4}
+
+
+Indica el numero de columnas de la sala. 
+
+
+
+Definición en la línea 29 del archivo Sala.\+hh.
+
+\index{Sala@{Sala}!cant\+\_\+prod@{cant\+\_\+prod}}
+\index{cant\+\_\+prod@{cant\+\_\+prod}!Sala@{Sala}}
+\subsubsection[{\texorpdfstring{cant\+\_\+prod}{cant_prod}}]{\setlength{\rightskip}{0pt plus 5cm}int Sala\+::cant\+\_\+prod\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_sala_aeb69af6cc00cfc97cfa4d18e1bd5e232}{}\label{class_sala_aeb69af6cc00cfc97cfa4d18e1bd5e232}
+
+
+Indica el numero de productos que hay en una sala. 
+
+
+
+Definición en la línea 31 del archivo Sala.\+hh.
+
+\index{Sala@{Sala}!coleccion@{coleccion}}
+\index{coleccion@{coleccion}!Sala@{Sala}}
+\subsubsection[{\texorpdfstring{coleccion}{coleccion}}]{\setlength{\rightskip}{0pt plus 5cm}map$<$string,int$>$ Sala\+::coleccion\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_sala_a1eea693397545de9c4750859bb58eae8}{}\label{class_sala_a1eea693397545de9c4750859bb58eae8}
+
+
+Diccionario que contiene la cantidad de cada producto que hay en una sala. 
+
+
+
+Definición en la línea 33 del archivo Sala.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_sala_8hh}{Sala.\+hh}\item 
+\hyperlink{_sala_8cc}{Sala.\+cc}\end{DoxyCompactItemize}
